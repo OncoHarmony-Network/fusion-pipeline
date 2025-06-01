@@ -1,0 +1,12 @@
+NAIVE_MERGE_RUNS/*
+reference_files/*
+RUNS
+test_data/*
+*/*.pyc
+Docker/build-temp*
+Docker/metafusion2.tar
+RUNS_Results
+RUNS_by_symbol
+RUNS_by_id
+RUNS_Results_old
+RUNS_Results_new*

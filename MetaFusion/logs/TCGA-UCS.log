@@ -1,0 +1,1293 @@
+Start at Sat Oct 5 08:58:46 UTC 2024 -----------
+Generating output in /MetaFusion/RUNS_Results/TCGA-UCS
+mkdir: cannot create directory '/MetaFusion/RUNS_Results/TCGA-UCS': File exists
+Rename cff
+python rename_cff_file_genes.MetaFusion.py /MetaFusion/RUNS_Results/TCGA-UCS/UCS.cff.reformat /MetaFusion/reference_files/Homo_sapiens.gene_info > /MetaFusion/RUNS_Results/TCGA-UCS/UCS.cff.reformat.renamed
+Annotate cff, extract sequence surrounding breakpoint
+3186995 annotations from /MetaFusion/reference_files/hg38_gene.bed loaded.
+16.2401621342 sec. elapsed.
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC00102', 'chrX', 'r'), ('LINC00102', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD42', 'chr22', 'r'), ('SNORD42', 'chr4', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('CD99P1', 'chrX', 'f'), ('CD99P1', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('TNFRSF10A-DT', 'chr8', 'f'), ('TNFRSF10A-DT', 'chr8', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('TRPC6P1', 'chrX', 'r'), ('TRPC6P1', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('7SK', 'chr1', 'r'), ('7SK', 'chr1', 'f'), ('7SK', 'chr11', 'f'), ('7SK', 'chr17', 'f'), ('7SK', 'chr3', 'r'), ('7SK', 'chr6', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('Y_RNA', 'chr1', 'r'), ('Y_RNA', 'chr1', 'f'), ('Y_RNA', 'chr10', 'r'), ('Y_RNA', 'chr10', 'f'), ('Y_RNA', 'chr11', 'f'), ('Y_RNA', 'chr11', 'r'), ('Y_RNA', 'chr12', 'r'), ('Y_RNA', 'chr12', 'f'), ('Y_RNA', 'chr13', 'f'), ('Y_RNA', 'chr14', 'f'), ('Y_RNA', 'chr14', 'r'), ('Y_RNA', 'chr15', 'f'), ('Y_RNA', 'chr15', 'r'), ('Y_RNA', 'chr16', 'f'), ('Y_RNA', 'chr16', 'r'), ('Y_RNA', 'chr17', 'f'), ('Y_RNA', 'chr17', 'r'), ('Y_RNA', 'chr18', 'f'), ('Y_RNA', 'chr18', 'r'), ('Y_RNA', 'chr19', 'r'), ('Y_RNA', 'chr19', 'f'), ('Y_RNA', 'chr2', 'f'), ('Y_RNA', 'chr2', 'r'), ('Y_RNA', 'chr20', 'f'), ('Y_RNA', 'chr20', 'r'), ('Y_RNA', 'chr21', 'f'), ('Y_RNA', 'chr21', 'r'), ('Y_RNA', 'chr22', 'f'), ('Y_RNA', 'chr22', 'r'), ('Y_RNA', 'chr3', 'r'), ('Y_RNA', 'chr3', 'f'), ('Y_RNA', 'chr4', 'r'), ('Y_RNA', 'chr4', 'f'), ('Y_RNA', 'chr5', 'r'), ('Y_RNA', 'chr5', 'f'), ('Y_RNA', 'chr6', 'r'), ('Y_RNA', 'chr6', 'f'), ('Y_RNA', 'chr7', 'r'), ('Y_RNA', 'chr7', 'f'), ('Y_RNA', 'chr8', 'f'), ('Y_RNA', 'chr8', 'r'), ('Y_RNA', 'chr9', 'f'), ('Y_RNA', 'chr9', 'r'), ('Y_RNA', 'chrX', 'r'), ('Y_RNA', 'chrX', 'f'), ('Y_RNA', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('WASIR1', 'chrX', 'r'), ('WASIR1', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U8', 'chr1', 'f'), ('U8', 'chr10', 'r'), ('U8', 'chr10', 'f'), ('U8', 'chr11', 'f'), ('U8', 'chr12', 'r'), ('U8', 'chr12', 'f'), ('U8', 'chr15', 'f'), ('U8', 'chr15', 'r'), ('U8', 'chr18', 'r'), ('U8', 'chr2', 'r'), ('U8', 'chr2', 'f'), ('U8', 'chr3', 'r'), ('U8', 'chr3', 'f'), ('U8', 'chr5', 'r'), ('U8', 'chr5', 'f'), ('U8', 'chr6', 'r'), ('U8', 'chr8', 'r'), ('U8', 'chr9', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U4', 'chr1', 'r'), ('U4', 'chr1', 'f'), ('U4', 'chr11', 'r'), ('U4', 'chr2', 'f'), ('U4', 'chr5', 'r'), ('U4', 'chr6', 'f'), ('U4', 'chr8', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U7', 'chr1', 'f'), ('U7', 'chr12', 'r'), ('U7', 'chr15', 'f'), ('U7', 'chr16', 'r'), ('U7', 'chr22', 'r'), ('U7', 'chr3', 'f'), ('U7', 'chrX', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U6', 'chr1', 'r'), ('U6', 'chr1', 'f'), ('U6', 'chr10', 'f'), ('U6', 'chr11', 'r'), ('U6', 'chr11', 'f'), ('U6', 'chr12', 'f'), ('U6', 'chr12', 'r'), ('U6', 'chr13', 'f'), ('U6', 'chr14', 'r'), ('U6', 'chr15', 'r'), ('U6', 'chr15', 'f'), ('U6', 'chr16', 'f'), ('U6', 'chr17', 'r'), ('U6', 'chr2', 'f'), ('U6', 'chr2', 'r'), ('U6', 'chr20', 'r'), ('U6', 'chr21', 'f'), ('U6', 'chr22', 'f'), ('U6', 'chr3', 'f'), ('U6', 'chr4', 'f'), ('U6', 'chr4', 'r'), ('U6', 'chr9', 'f'), ('U6', 'chrX', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U1', 'chr1', 'f'), ('U1', 'chr1', 'r'), ('U1', 'chr21', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U3', 'chr1', 'f'), ('U3', 'chr1', 'r'), ('U3', 'chr10', 'f'), ('U3', 'chr10', 'r'), ('U3', 'chr11', 'f'), ('U3', 'chr14', 'r'), ('U3', 'chr15', 'f'), ('U3', 'chr15', 'r'), ('U3', 'chr17', 'r'), ('U3', 'chr17', 'f'), ('U3', 'chr18', 'f'), ('U3', 'chr18', 'r'), ('U3', 'chr19', 'r'), ('U3', 'chr2', 'f'), ('U3', 'chr2', 'r'), ('U3', 'chr20', 'f'), ('U3', 'chr20', 'r'), ('U3', 'chr21', 'r'), ('U3', 'chr3', 'r'), ('U3', 'chr3', 'f'), ('U3', 'chr4', 'f'), ('U3', 'chr5', 'f'), ('U3', 'chr5', 'r'), ('U3', 'chr6', 'f'), ('U3', 'chr6', 'r'), ('U3', 'chr7', 'f'), ('U3', 'chr7', 'r'), ('U3', 'chr8', 'f'), ('U3', 'chr8', 'r'), ('U3', 'chrX', 'f'), ('U3', 'chrX', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U2', 'chr1', 'f'), ('U2', 'chr14', 'r'), ('U2', 'chr17', 'r'), ('U2', 'chr22', 'r'), ('U2', 'chr3', 'f'), ('U2', 'chr4', 'f'), ('U2', 'chr8', 'r'), ('U2', 'chr9', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('MIR6089', 'chrX', 'f'), ('MIR6089', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('IL3RA', 'chrX', 'f'), ('IL3RA', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('GTPBP6', 'chrX', 'r'), ('GTPBP6', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD18', 'chr15', 'r'), ('SNORD18', 'chr2', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LSP1P5', 'chr1', 'f'), ('LSP1P5', 'chr2', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ELOCP24', 'chrX', 'r'), ('ELOCP24', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('Vault', 'chr17', 'f'), ('Vault', 'chr17', 'r'), ('Vault', 'chr2', 'r'), ('Vault', 'chr5', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC03025', 'chr9', 'r'), ('LINC03025', 'chr9', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('5S_rRNA', 'chr1', 'r'), ('5S_rRNA', 'chr16', 'r'), ('5S_rRNA', 'chr17', 'r'), ('5S_rRNA', 'chr19', 'r'), ('5S_rRNA', 'chr2', 'r'), ('5S_rRNA', 'chr2', 'f'), ('5S_rRNA', 'chr6', 'r'), ('5S_rRNA', 'chr7', 'r'), ('5S_rRNA', 'chrX', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('WASH6P', 'chrX', 'f'), ('WASH6P', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC01238', 'chr2', 'f'), ('LINC01238', 'chr2', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('MIR3690', 'chrX', 'f'), ('MIR3690', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('HERC2P7', 'chr15', 'r'), ('HERC2P7', 'chr15', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('CTSLP2', 'chr10', 'f'), ('CTSLP2', 'chr10', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA62', 'chr1', 'f'), ('SNORA62', 'chr11', 'f'), ('SNORA62', 'chr16', 'r'), ('SNORA62', 'chr21', 'f'), ('SNORA62', 'chr3', 'f'), ('SNORA62', 'chr4', 'f'), ('SNORA62', 'chr8', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA63', 'chr1', 'f'), ('SNORA63', 'chr1', 'r'), ('SNORA63', 'chr15', 'r'), ('SNORA63', 'chr3', 'f'), ('SNORA63', 'chr4', 'f'), ('SNORA63', 'chr5', 'f'), ('SNORA63', 'chr7', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD116', 'chr1', 'r'), ('SNORD116', 'chr13', 'r'), ('SNORD116', 'chr9', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD63', 'chr17', 'r'), ('SNORD63', 'chr3', 'r'), ('SNORD63', 'chr5', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('KMT2CP1', 'chr1', 'r'), ('KMT2CP1', 'chr1', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SHOX', 'chrX', 'f'), ('SHOX', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('RPL23AP7', 'chr2', 'r'), ('RPL23AP7', 'chr22', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('DHRSX-IT1', 'chrX', 'r'), ('DHRSX-IT1', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD39', 'chr11', 'r'), ('SNORD39', 'chr2', 'f'), ('SNORD39', 'chr4', 'r'), ('SNORD39', 'chr9', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ZBED1', 'chrX', 'r'), ('ZBED1', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ASMTL-AS1', 'chrX', 'f'), ('ASMTL-AS1', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD30', 'chr11', 'r'), ('SNORD30', 'chrX', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ASMTL', 'chrX', 'r'), ('ASMTL', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('FABP5P13', 'chrX', 'r'), ('FABP5P13', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('CD99', 'chrX', 'f'), ('CD99', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('DHRSX', 'chrX', 'r'), ('DHRSX', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD33', 'chr16', 'r'), ('SNORD33', 'chr19', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('NPIPA9', 'chr16', 'f'), ('NPIPA9', 'chr16', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD81', 'chr1', 'f'), ('SNORD81', 'chr5', 'f'), ('SNORD81', 'chr7', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('PLCXD1', 'chrX', 'f'), ('PLCXD1', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('RNA5SP498', 'chrX', 'r'), ('RNA5SP498', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('Metazoa_SRP', 'chr1', 'f'), ('Metazoa_SRP', 'chr1', 'r'), ('Metazoa_SRP', 'chr10', 'f'), ('Metazoa_SRP', 'chr10', 'r'), ('Metazoa_SRP', 'chr11', 'r'), ('Metazoa_SRP', 'chr11', 'f'), ('Metazoa_SRP', 'chr12', 'f'), ('Metazoa_SRP', 'chr12', 'r'), ('Metazoa_SRP', 'chr13', 'r'), ('Metazoa_SRP', 'chr13', 'f'), ('Metazoa_SRP', 'chr14', 'r'), ('Metazoa_SRP', 'chr14', 'f'), ('Metazoa_SRP', 'chr15', 'r'), ('Metazoa_SRP', 'chr15', 'f'), ('Metazoa_SRP', 'chr16', 'f'), ('Metazoa_SRP', 'chr16', 'r'), ('Metazoa_SRP', 'chr17', 'r'), ('Metazoa_SRP', 'chr17', 'f'), ('Metazoa_SRP', 'chr18', 'r'), ('Metazoa_SRP', 'chr19', 'f'), ('Metazoa_SRP', 'chr19', 'r'), ('Metazoa_SRP', 'chr2', 'f'), ('Metazoa_SRP', 'chr2', 'r'), ('Metazoa_SRP', 'chr20', 'f'), ('Metazoa_SRP', 'chr20', 'r'), ('Metazoa_SRP', 'chr22', 'f'), ('Metazoa_SRP', 'chr22', 'r'), ('Metazoa_SRP', 'chr3', 'r'), ('Metazoa_SRP', 'chr3', 'f'), ('Metazoa_SRP', 'chr4', 'r'), ('Metazoa_SRP', 'chr4', 'f'), ('Metazoa_SRP', 'chr5', 'f'), ('Metazoa_SRP', 'chr5', 'r'), ('Metazoa_SRP', 'chr6', 'f'), ('Metazoa_SRP', 'chr6', 'r'), ('Metazoa_SRP', 'chr7', 'f'), ('Metazoa_SRP', 'chr7', 'r'), ('Metazoa_SRP', 'chr8', 'f'), ('Metazoa_SRP', 'chr8', 'r'), ('Metazoa_SRP', 'chr9', 'f'), ('Metazoa_SRP', 'chr9', 'r'), ('Metazoa_SRP', 'chrX', 'r'), ('Metazoa_SRP', 'chrX', 'f'), ('Metazoa_SRP', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('CSF2RA', 'chrX', 'f'), ('CSF2RA', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('PPP2R3B', 'chrX', 'r'), ('PPP2R3B', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('DPH3P2', 'chrX', 'f'), ('DPH3P2', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ASMT', 'chrX', 'f'), ('ASMT', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('IL9R', 'chrX', 'f'), ('IL9R', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('VAMP7', 'chrX', 'f'), ('VAMP7', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC02968', 'chrX', 'f'), ('LINC02968', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA75', 'chr12', 'r'), ('SNORA75', 'chr12', 'f'), ('SNORA75', 'chr16', 'f'), ('SNORA75', 'chr2', 'r'), ('SNORA75', 'chr4', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA74', 'chr12', 'r'), ('SNORA74', 'chr17', 'f'), ('SNORA74', 'chr2', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA73', 'chr18', 'f'), ('SNORA73', 'chr18', 'r'), ('SNORA73', 'chr6', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA72', 'chr1', 'r'), ('SNORA72', 'chr1', 'f'), ('SNORA72', 'chr2', 'f'), ('SNORA72', 'chr3', 'f'), ('SNORA72', 'chr3', 'r'), ('SNORA72', 'chr8', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA71', 'chr10', 'f'), ('SNORA71', 'chr20', 'r'), ('SNORA71', 'chr20', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA70', 'chr1', 'r'), ('SNORA70', 'chr12', 'r'), ('SNORA70', 'chr12', 'f'), ('SNORA70', 'chr14', 'f'), ('SNORA70', 'chr16', 'r'), ('SNORA70', 'chr17', 'r'), ('SNORA70', 'chr17', 'f'), ('SNORA70', 'chr18', 'r'), ('SNORA70', 'chr19', 'f'), ('SNORA70', 'chr21', 'f'), ('SNORA70', 'chr21', 'r'), ('SNORA70', 'chr3', 'f'), ('SNORA70', 'chr4', 'f'), ('SNORA70', 'chr5', 'f'), ('SNORA70', 'chr6', 'f'), ('SNORA70', 'chr8', 'r'), ('SNORA70', 'chr8', 'f'), ('SNORA70', 'chr9', 'f'), ('SNORA70', 'chr9', 'r'), ('SNORA70', 'chrX', 'f'), ('SNORA70', 'chrY', 'r'), ('SNORA70', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('AMD1P2', 'chrX', 'r'), ('AMD1P2', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('CRLF2', 'chrX', 'r'), ('CRLF2', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD115', 'chr10', 'f'), ('SNORD115', 'chr15', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('AKAP17A', 'chrX', 'f'), ('AKAP17A', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD27', 'chr11', 'r'), ('SNORD27', 'chr13', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('P2RY8', 'chrX', 'r'), ('P2RY8', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('NPEPPSP1', 'chr17', 'f'), ('NPEPPSP1', 'chr17', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC00685', 'chrX', 'f'), ('LINC00685', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('DDX11L2', 'chr1', 'f'), ('DDX11L2', 'chr2', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('GABARAPL3', 'chr15', 'f'), ('GABARAPL3', 'chr15', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC02256', 'chr15', 'r'), ('LINC02256', 'chr15', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('5_8S_rRNA', 'chr14', 'f'), ('5_8S_rRNA', 'chr20', 'r'), ('5_8S_rRNA', 'chr21', 'f'), ('5_8S_rRNA', 'chr22', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('RPL14P5', 'chrX', 'r'), ('RPL14P5', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC00106', 'chrX', 'f'), ('LINC00106', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ANKRD20A5P', 'chr18', 'f'), ('ANKRD20A5P', 'chr9', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SLC25A6', 'chrX', 'r'), ('SLC25A6', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('KRT18P53', 'chrX', 'r'), ('KRT18P53', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('DDX11L16', 'chr15', 'r'), ('DDX11L16', 'chr16', 'f'), ('DDX11L16', 'chrX', 'r'), ('DDX11L16', 'chrY', 'r')]
+Gene intervals loaded.
+18.2163729668 sec. elapsed.
+Transcript annotations loaded.
+12.2557229996 sec. elapsed.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AL137028.1 is not in current annotation.
+Warnning: gene name AL137028.1 is not in current annotation.
+Warnning: gene name AC107918.5 is not in current annotation.
+Warnning: gene name AC107918.6 is not in current annotation.
+Warnning: gene name AC107918.5,AC107918.6 is not in current annotation.
+Warnning: gene name AC092326.1 is not in current annotation.
+Warnning: gene name AC098965.1 is not in current annotation.
+Warnning: gene name AC092326.1,AC098965.1 is not in current annotation.
+Warnning: gene name AC092835.1 is not in current annotation.
+Warnning: gene name AC092835.1 is not in current annotation.
+Warnning: gene name AC068413.1 is not in current annotation.
+Warnning: gene name AC068413.1 is not in current annotation.
+Warnning: gene name AC068413.1 is not in current annotation.
+Warnning: gene name AC068413.1 is not in current annotation.
+Warnning: gene name AC079760.1 is not in current annotation.
+Warnning: gene name AC000058.1 is not in current annotation.
+Warnning: gene name AC079760.1,AC000058.1 is not in current annotation.
+Warnning: gene name AC067960.1 is not in current annotation.
+Warnning: gene name Y_RNA,AC067960.1 is not in current annotation.
+Warnning: gene name AL158212.4 is not in current annotation.
+Warnning: gene name AL158212.1 is not in current annotation.
+Warnning: gene name AL158212.4,AL158212.1 is not in current annotation.
+Warnning: gene name AC024230.1 is not in current annotation.
+Warnning: gene name AC024230.1 is not in current annotation.
+Warnning: gene name AC098862.1 is not in current annotation.
+Warnning: gene name AC024230.1 is not in current annotation.
+Warnning: gene name AC024230.1,AC098862.1 is not in current annotation.
+Warnning: gene name AC024230.1 is not in current annotation.
+Warnning: gene name AC024230.1 is not in current annotation.
+Warnning: gene name AL133229.1 is not in current annotation.
+Warnning: gene name AL049812.2 is not in current annotation.
+Warnning: gene name AL133229.1,AL049812.2 is not in current annotation.
+Warnning: gene name CU104787.1 is not in current annotation.
+Warnning: gene name CU104787.1 is not in current annotation.
+Warnning: gene name AL773545.3 is not in current annotation.
+Warnning: gene name AL773545.3 is not in current annotation.
+Warnning: gene name AL133229.1 is not in current annotation.
+Warnning: gene name AL049812.2 is not in current annotation.
+Warnning: gene name AL133229.1,AL049812.2 is not in current annotation.
+Warnning: gene name AC068413.1 is not in current annotation.
+Warnning: gene name AC068413.1 is not in current annotation.
+Warnning: gene name AC068413.1 is not in current annotation.
+Warnning: gene name AC068413.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name Z98755.1 is not in current annotation.
+Warnning: gene name AL591387.1 is not in current annotation.
+Warnning: gene name Z98755.1,AL591387.1 is not in current annotation.
+Warnning: gene name Z98755.1 is not in current annotation.
+Warnning: gene name AL591387.1 is not in current annotation.
+Warnning: gene name Z98755.1,AL591387.1 is not in current annotation.
+Warnning: gene name AL590550.1 is not in current annotation.
+Warnning: gene name AL606845.1 is not in current annotation.
+Warnning: gene name AL590550.1,AL606845.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AC087632.2 is not in current annotation.
+Warnning: gene name AC087632.2 is not in current annotation.
+Warnning: gene name AL590550.1 is not in current annotation.
+Warnning: gene name AL606845.1 is not in current annotation.
+Warnning: gene name AL590550.1,AL606845.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AL358053.1 is not in current annotation.
+Warnning: gene name AL591644.1 is not in current annotation.
+Warnning: gene name AL358053.1,AL591644.1 is not in current annotation.
+Warnning: gene name AP000959.1 is not in current annotation.
+Warnning: gene name AP000949.1 is not in current annotation.
+Warnning: gene name AP000959.1,AP000949.1 is not in current annotation.
+Warnning: gene name AL773545.3 is not in current annotation.
+Warnning: gene name AL773545.3 is not in current annotation.
+Warnning: gene name AC024230.1 is not in current annotation.
+Warnning: gene name AC024230.1 is not in current annotation.
+Warnning: gene name AC098862.1 is not in current annotation.
+Warnning: gene name AC024230.1 is not in current annotation.
+Warnning: gene name AC024230.1,AC098862.1 is not in current annotation.
+Warnning: gene name AC098969.2 is not in current annotation.
+Warnning: gene name AC020655.1 is not in current annotation.
+Warnning: gene name AC098969.2,AC020655.1 is not in current annotation.
+Warnning: gene name AC011029.1 is not in current annotation.
+Warnning: gene name AC011029.1 is not in current annotation.
+Warnning: gene name AC079910.1 is not in current annotation.
+Warnning: gene name AC084017.1 is not in current annotation.
+Warnning: gene name AC079910.1,AC084017.1 is not in current annotation.
+Warnning: gene name AC126763.1 is not in current annotation.
+Warnning: gene name AC137803.1 is not in current annotation.
+Warnning: gene name AC126763.1,AC137803.1 is not in current annotation.
+Warnning: gene name AL022100.1 is not in current annotation.
+Warnning: gene name AL023755.1 is not in current annotation.
+Warnning: gene name AL022100.1,AL023755.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AL450332.1 is not in current annotation.
+Warnning: gene name AL365259.1 is not in current annotation.
+Warnning: gene name AL450332.1,AL365259.1 is not in current annotation.
+Warnning: gene name AL031123.1 is not in current annotation.
+Warnning: gene name AL136361.1 is not in current annotation.
+Warnning: gene name AL031123.1,AL136361.1 is not in current annotation.
+Warnning: gene name AL050309.1 is not in current annotation.
+Warnning: gene name AL590410.1 is not in current annotation.
+Warnning: gene name AL050309.1 is not in current annotation.
+Warnning: gene name AL590410.1,Y_RNA is not in current annotation.
+Warnning: gene name AL627223.1 is not in current annotation.
+Warnning: gene name AL627223.1,Metazoa_SRP is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AC020897.1 is not in current annotation.
+Warnning: gene name AC020912.1 is not in current annotation.
+Warnning: gene name AC020897.1,AC020912.1 is not in current annotation.
+Warnning: gene name AC092648.1 is not in current annotation.
+Warnning: gene name AC092637.1 is not in current annotation.
+Warnning: gene name AC092648.1,AC092637.1 is not in current annotation.
+Warnning: gene name AC104596.1 is not in current annotation.
+Warnning: gene name AC104596.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AC002464.1 is not in current annotation.
+Warnning: gene name AL512430.3 is not in current annotation.
+Warnning: gene name AC002464.1,AL512430.3 is not in current annotation.
+Warnning: gene name AC116362.1 is not in current annotation.
+Warnning: gene name AC116362.1 is not in current annotation.
+Warnning: gene name AC013643.3 is not in current annotation.
+Warnning: gene name AC013643.2 is not in current annotation.
+Warnning: gene name AC013643.3,AC013643.2 is not in current annotation.
+Warnning: gene name AC108052.1 is not in current annotation.
+Warnning: gene name AC105252.1 is not in current annotation.
+Warnning: gene name AC108052.1,AC105252.1 is not in current annotation.
+Warnning: gene name AC008507.5 is not in current annotation.
+Warnning: gene name AC005597.1 is not in current annotation.
+Warnning: gene name AC008507.5,AC005597.1 is not in current annotation.
+Warnning: gene name AC008957.1 is not in current annotation.
+Warnning: gene name AC026741.1 is not in current annotation.
+Warnning: gene name AC008957.1,AC026741.1 is not in current annotation.
+Warnning: gene name AP000787.1 is not in current annotation.
+Warnning: gene name AP001790.1 is not in current annotation.
+Warnning: gene name AP000787.1,AP001790.1 is not in current annotation.
+Warnning: gene name AL359736.1 is not in current annotation.
+Warnning: gene name AL359736.1 is not in current annotation.
+Warnning: gene name AL445985.1 is not in current annotation.
+Warnning: gene name AL445985.1 is not in current annotation.
+Warnning: gene name AP001790.1 is not in current annotation.
+Warnning: gene name AP000820.2 is not in current annotation.
+Warnning: gene name AP001790.1,AP000820.2 is not in current annotation.
+Warnning: gene name AC090907.2 is not in current annotation.
+Warnning: gene name AC019254.2 is not in current annotation.
+Warnning: gene name AC090907.2,AC019254.2 is not in current annotation.
+Warnning: gene name AP000787.1 is not in current annotation.
+Warnning: gene name AP001790.1 is not in current annotation.
+Warnning: gene name AP000787.1,AP001790.1 is not in current annotation.
+Warnning: gene name CR392039.1 is not in current annotation.
+Warnning: gene name CR392039.3 is not in current annotation.
+Warnning: gene name CR392039.1,CR392039.3 is not in current annotation.
+Warnning: gene name AC090360.1 is not in current annotation.
+Warnning: gene name CR392039.1 is not in current annotation.
+Warnning: gene name CR392039.3 is not in current annotation.
+Warnning: gene name AC090360.1 is not in current annotation.
+Warnning: gene name CR392039.1,CR392039.3 is not in current annotation.
+Warnning: gene name AC068448.1 is not in current annotation.
+Warnning: gene name AC139426.3 is not in current annotation.
+Warnning: gene name AC068448.1,AC139426.3 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AC009171.1 is not in current annotation.
+Warnning: gene name AC009171.2 is not in current annotation.
+Warnning: gene name AC009171.1,AC009171.2 is not in current annotation.
+Warnning: gene name AL773545.3 is not in current annotation.
+Warnning: gene name AL773545.3 is not in current annotation.
+Warnning: gene name AC253536.7 is not in current annotation.
+Warnning: gene name AP000350.6 is not in current annotation.
+Warnning: gene name AP000350.2 is not in current annotation.
+Warnning: gene name AC253536.7 is not in current annotation.
+Warnning: gene name AP000350.6,AP000350.2 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AL023806.5 is not in current annotation.
+Warnning: gene name AL023806.4 is not in current annotation.
+Warnning: gene name AL023806.5,AL023806.4 is not in current annotation.
+Warnning: gene name MTCL3 is not in current annotation.
+Warnning: gene name MTCL3 is not in current annotation.
+Warnning: gene name AL096711.2 is not in current annotation.
+Warnning: gene name AL096711.2 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AL049828.1 is not in current annotation.
+Warnning: gene name AL049828.1 is not in current annotation.
+Warnning: gene name AL390800.1 is not in current annotation.
+Warnning: gene name AL049828.1 is not in current annotation.
+Warnning: gene name AL049828.1,AL390800.1 is not in current annotation.
+Warnning: gene name AC126763.1 is not in current annotation.
+Warnning: gene name AC137803.1 is not in current annotation.
+Warnning: gene name AC126763.1,AC137803.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name SLX1A-SULT1A3 is not in current annotation.
+Warnning: gene name SLX1A-SULT1A3 is not in current annotation.
+Warnning: gene name AC024230.1 is not in current annotation.
+Warnning: gene name AC024230.1 is not in current annotation.
+Warnning: gene name AC093791.2 is not in current annotation.
+Warnning: gene name AC093791.1 is not in current annotation.
+Warnning: gene name AC093791.2,AC093791.1 is not in current annotation.
+Warnning: gene name AC093898.1 is not in current annotation.
+Warnning: gene name AC006840.1 is not in current annotation.
+Warnning: gene name AC093898.1,AC006840.1 is not in current annotation.
+Warnning: gene name AL589182.1 is not in current annotation.
+Warnning: gene name AL589182.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AC084262.2 is not in current annotation.
+Warnning: gene name AC084026.2 is not in current annotation.
+Warnning: gene name AC084262.2,AC084026.2 is not in current annotation.
+Warnning: gene name AC016957.1 is not in current annotation.
+Warnning: gene name AC048344.2 is not in current annotation.
+Warnning: gene name AC016957.1,AC048344.2 is not in current annotation.
+Warnning: gene name SPECC1L-ADORA2A is not in current annotation.
+Warnning: gene name SPECC1L-ADORA2A is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AC093898.1 is not in current annotation.
+Warnning: gene name AC006840.1 is not in current annotation.
+Warnning: gene name AC093898.1,AC006840.1 is not in current annotation.
+Warnning: gene name AC009264.1 is not in current annotation.
+Warnning: gene name AC009264.1 is not in current annotation.
+Warnning: gene name AL096854.1 is not in current annotation.
+Warnning: gene name AL096854.1 is not in current annotation.
+Warnning: gene name AC064872.1 is not in current annotation.
+Warnning: gene name AC092660.1 is not in current annotation.
+Warnning: gene name AC012494.1 is not in current annotation.
+Warnning: gene name AC064872.1,AC092660.1 is not in current annotation.
+Warnning: gene name AC012494.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AC093423.3 is not in current annotation.
+Warnning: gene name AC093423.3 is not in current annotation.
+Warnning: gene name AL773545.3 is not in current annotation.
+Warnning: gene name AL773545.3 is not in current annotation.
+Warnning: gene name MTCL3 is not in current annotation.
+Warnning: gene name MTCL3 is not in current annotation.
+Warnning: gene name AC119677.1 is not in current annotation.
+Warnning: gene name AL391730.1 is not in current annotation.
+Warnning: gene name AC119677.1,AL391730.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AL096711.2 is not in current annotation.
+Warnning: gene name AL096711.2 is not in current annotation.
+Warnning: gene name MTCL3 is not in current annotation.
+Warnning: gene name MTCL3 is not in current annotation.
+Warnning: gene name AC128716.1 is not in current annotation.
+Warnning: gene name AC128685.1 is not in current annotation.
+Warnning: gene name AC128716.1,AC128685.1 is not in current annotation.
+Warnning: gene name INS-IGF2 is not in current annotation.
+Warnning: gene name INS-IGF2 is not in current annotation.
+Warnning: gene name AC132217.2 is not in current annotation.
+Warnning: gene name AC132217.2 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AC107029.1 is not in current annotation.
+Warnning: gene name AC107029.2 is not in current annotation.
+Warnning: gene name AC107029.1,AC107029.2 is not in current annotation.
+Warnning: gene name AL669970.1 is not in current annotation.
+Warnning: gene name AL669970.3 is not in current annotation.
+Warnning: gene name AL669970.1,AL669970.3 is not in current annotation.
+Warnning: gene name AC068448.1 is not in current annotation.
+Warnning: gene name AC139426.3 is not in current annotation.
+Warnning: gene name AC068448.1,AC139426.3 is not in current annotation.
+Warnning: gene name AC107029.1 is not in current annotation.
+Warnning: gene name AC107029.2 is not in current annotation.
+Warnning: gene name AC107029.1,AC107029.2 is not in current annotation.
+Warnning: gene name AC068413.1 is not in current annotation.
+Warnning: gene name AC068413.1 is not in current annotation.
+Warnning: gene name AC114546.2 is not in current annotation.
+Warnning: gene name AC021231.3 is not in current annotation.
+Warnning: gene name AC114546.2,AC021231.3 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AL157371.1 is not in current annotation.
+Warnning: gene name AL109615.3 is not in current annotation.
+Warnning: gene name AL157371.1,AL109615.3 is not in current annotation.
+Warnning: gene name AC011287.1 is not in current annotation.
+Warnning: gene name AC005019.2 is not in current annotation.
+Warnning: gene name AC011287.2 is not in current annotation.
+Warnning: gene name AC011287.1,AC005019.2 is not in current annotation.
+Warnning: gene name AC011287.2 is not in current annotation.
+Warnning: gene name IFT56 is not in current annotation.
+Warnning: gene name IFT56 is not in current annotation.
+Warnning: gene name AC018521.6 is not in current annotation.
+Warnning: gene name AC036222.1 is not in current annotation.
+Warnning: gene name AC018521.6 is not in current annotation.
+Warnning: gene name AC036222.1,Y_RNA is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AL157371.1 is not in current annotation.
+Warnning: gene name AL109615.3 is not in current annotation.
+Warnning: gene name AL157371.1,AL109615.3 is not in current annotation.
+Warnning: gene name AC009264.1 is not in current annotation.
+Warnning: gene name AC009264.1 is not in current annotation.
+Warnning: gene name ATP5MF-PTCD1 is not in current annotation.
+Warnning: gene name ATP5MF-PTCD1 is not in current annotation.
+Warnning: gene name AC011500.2 is not in current annotation.
+Warnning: gene name AC011500.1 is not in current annotation.
+Warnning: gene name AC011500.2,AC011500.1 is not in current annotation.
+Warnning: gene name AC104695.2 is not in current annotation.
+Warnning: gene name AC104695.1 is not in current annotation.
+Warnning: gene name AC104695.2,AC104695.1 is not in current annotation.
+Warnning: gene name AC008966.1 is not in current annotation.
+Warnning: gene name AC026477.1 is not in current annotation.
+Warnning: gene name AC008966.1,AC026477.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name FO393414.2 is not in current annotation.
+Warnning: gene name FO393414.1 is not in current annotation.
+Warnning: gene name FO393414.2,FO393414.1 is not in current annotation.
+Warnning: gene name AC023490.2 is not in current annotation.
+Warnning: gene name AP000357.2 is not in current annotation.
+Warnning: gene name AP000358.1 is not in current annotation.
+Warnning: gene name AC023490.2 is not in current annotation.
+Warnning: gene name AP000357.2,AP000358.1 is not in current annotation.
+Warnning: gene name AL096854.1 is not in current annotation.
+Warnning: gene name AL096854.1 is not in current annotation.
+Warnning: gene name AL161447.2 is not in current annotation.
+Warnning: gene name AL161447.1 is not in current annotation.
+Warnning: gene name AL161447.2,AL161447.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AC008507.1 is not in current annotation.
+Warnning: gene name AC008507.4 is not in current annotation.
+Warnning: gene name AC008507.1,AC008507.4 is not in current annotation.
+Warnning: gene name AC005580.1 is not in current annotation.
+Warnning: gene name AC093074.1 is not in current annotation.
+Warnning: gene name AC005580.1,AC093074.1 is not in current annotation.
+Warnning: gene name AC008507.5 is not in current annotation.
+Warnning: gene name AC005597.1 is not in current annotation.
+Warnning: gene name AC008507.5,AC005597.1 is not in current annotation.
+Warnning: gene name AC008507.5 is not in current annotation.
+Warnning: gene name AC005597.1 is not in current annotation.
+Warnning: gene name AC008507.5,AC005597.1 is not in current annotation.
+Warnning: gene name AC092821.1 is not in current annotation.
+Warnning: gene name AC024940.4 is not in current annotation.
+Warnning: gene name AC024940.2 is not in current annotation.
+Warnning: gene name AC092821.1 is not in current annotation.
+Warnning: gene name AC024940.4,AC024940.2 is not in current annotation.
+Warnning: gene name AC134698.2 is not in current annotation.
+Warnning: gene name AC139365.2 is not in current annotation.
+Warnning: gene name AC134698.2,AC139365.2 is not in current annotation.
+Warnning: gene name AC092821.3 is not in current annotation.
+Warnning: gene name AC024940.4 is not in current annotation.
+Warnning: gene name AC024940.2 is not in current annotation.
+Warnning: gene name AC092821.3 is not in current annotation.
+Warnning: gene name AC024940.4,AC024940.2 is not in current annotation.
+Warnning: gene name IQCJ-SCHIP1 is not in current annotation.
+Warnning: gene name IQCJ-SCHIP1 is not in current annotation.
+Warnning: gene name AL138767.2 is not in current annotation.
+Warnning: gene name AL138767.3 is not in current annotation.
+Warnning: gene name AL138767.2,AL138767.3 is not in current annotation.
+Warnning: gene name AC121764.2 is not in current annotation.
+Warnning: gene name AC121764.3 is not in current annotation.
+Warnning: gene name AC121764.2,AC121764.3 is not in current annotation.
+Warnning: gene name AC010969.2 is not in current annotation.
+Warnning: gene name AC010969.2 is not in current annotation.
+Warnning: gene name AC207130.1 is not in current annotation.
+Warnning: gene name Z82202.1 is not in current annotation.
+Warnning: gene name AC207130.1 is not in current annotation.
+Warnning: gene name AC207130.1 is not in current annotation.
+Warnning: gene name Z82202.1,AC207130.1 is not in current annotation.
+Warnning: gene name AL773545.3 is not in current annotation.
+Warnning: gene name AL773545.3 is not in current annotation.
+Warnning: gene name AC068448.1 is not in current annotation.
+Warnning: gene name AC139426.3 is not in current annotation.
+Warnning: gene name AC068448.1,AC139426.3 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AC093898.1 is not in current annotation.
+Warnning: gene name AC006840.1 is not in current annotation.
+Warnning: gene name AC093898.1,AC006840.1 is not in current annotation.
+Warnning: gene name AC244394.2 is not in current annotation.
+Warnning: gene name AC244394.2 is not in current annotation.
+Warnning: gene name AC004870.3 is not in current annotation.
+Warnning: gene name AC087175.1 is not in current annotation.
+Warnning: gene name AC004870.3,AC087175.1 is not in current annotation.
+Warnning: gene name AC060764.1 is not in current annotation.
+Warnning: gene name AC044836.1 is not in current annotation.
+Warnning: gene name AC060764.1,AC044836.1 is not in current annotation.
+Warnning: gene name AC004870.3 is not in current annotation.
+Warnning: gene name AC087175.1 is not in current annotation.
+Warnning: gene name AC004870.3,AC087175.1 is not in current annotation.
+Warnning: gene name AL121904.2 is not in current annotation.
+Warnning: gene name AL121904.2 is not in current annotation.
+Warnning: gene name AL121904.2 is not in current annotation.
+Warnning: gene name AL035665.1 is not in current annotation.
+Warnning: gene name AL035665.2 is not in current annotation.
+Warnning: gene name AL121904.2 is not in current annotation.
+Warnning: gene name AL035665.1,AL035665.2 is not in current annotation.
+Warnning: gene name AL096854.1 is not in current annotation.
+Warnning: gene name AL096854.1 is not in current annotation.
+Warnning: gene name AC064872.1 is not in current annotation.
+Warnning: gene name AC092660.1 is not in current annotation.
+Warnning: gene name AC012494.1 is not in current annotation.
+Warnning: gene name AC064872.1,AC092660.1 is not in current annotation.
+Warnning: gene name AC012494.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AC068448.1 is not in current annotation.
+Warnning: gene name AC139426.3 is not in current annotation.
+Warnning: gene name AC068448.1,AC139426.3 is not in current annotation.
+Warnning: gene name AC026254.2 is not in current annotation.
+Warnning: gene name AC090615.1 is not in current annotation.
+Warnning: gene name AC026254.2,AC090615.1 is not in current annotation.
+Warnning: gene name AC009264.1 is not in current annotation.
+Warnning: gene name AC009264.1 is not in current annotation.
+Warnning: gene name AL773545.3 is not in current annotation.
+Warnning: gene name AL773545.3 is not in current annotation.
+Warnning: gene name AC109466.1 is not in current annotation.
+Warnning: gene name AC109466.1 is not in current annotation.
+Warnning: gene name MTCL3 is not in current annotation.
+Warnning: gene name MTCL3 is not in current annotation.
+Warnning: gene name AC022106.1 is not in current annotation.
+Warnning: gene name AC022106.2 is not in current annotation.
+Warnning: gene name AC022106.1,AC022106.2 is not in current annotation.
+Warnning: gene name AC079142.1 is not in current annotation.
+Warnning: gene name AC079142.1 is not in current annotation.
+Warnning: gene name LOC102724023 is not in current annotation.
+Warnning: gene name FP565260.3 is not in current annotation.
+Warnning: gene name FP565260.5 is not in current annotation.
+Warnning: gene name LOC102724023 is not in current annotation.
+Warnning: gene name FP565260.3,FP565260.5 is not in current annotation.
+Warnning: gene name AP001992.1 is not in current annotation.
+Warnning: gene name AP001992.1 is not in current annotation.
+Warnning: gene name FP565260.2 is not in current annotation.
+Warnning: gene name FP565260.3 is not in current annotation.
+Warnning: gene name FP565260.5 is not in current annotation.
+Warnning: gene name FP565260.2 is not in current annotation.
+Warnning: gene name FP565260.3,FP565260.5 is not in current annotation.
+Warnning: gene name AC005774.1 is not in current annotation.
+Warnning: gene name AC093515.1 is not in current annotation.
+Warnning: gene name AC005774.1,AC093515.1 is not in current annotation.
+Warnning: gene name AL031315.1 is not in current annotation.
+Warnning: gene name AL031315.1 is not in current annotation.
+Warnning: gene name AC135068.7 is not in current annotation.
+Warnning: gene name AC135068.7 is not in current annotation.
+Warnning: gene name AC008568.1 is not in current annotation.
+Warnning: gene name AC008568.1 is not in current annotation.
+Warnning: gene name MTCL3 is not in current annotation.
+Warnning: gene name MTCL3 is not in current annotation.
+Warnning: gene name AC136604.2 is not in current annotation.
+Warnning: gene name AC122713.2 is not in current annotation.
+Warnning: gene name AC122713.1 is not in current annotation.
+Warnning: gene name AC136604.2 is not in current annotation.
+Warnning: gene name AC122713.2,AC122713.1 is not in current annotation.
+Warnning: gene name AL133163.2 is not in current annotation.
+Warnning: gene name AL133163.1 is not in current annotation.
+Warnning: gene name AL133163.2,AL133163.1 is not in current annotation.
+Warnning: gene name AP002982.1 is not in current annotation.
+Warnning: gene name AP002982.2 is not in current annotation.
+Warnning: gene name AP002982.1,AP002982.2 is not in current annotation.
+Warnning: gene name AF186192.1 is not in current annotation.
+Warnning: gene name Metazoa_SRP,AF186192.1 is not in current annotation.
+Warnning: gene name AC022034.1 is not in current annotation.
+Warnning: gene name AC022034.1 is not in current annotation.
+Warnning: gene name AC022034.3 is not in current annotation.
+Warnning: gene name AC022034.3 is not in current annotation.
+Warnning: gene name AL589182.1 is not in current annotation.
+Warnning: gene name AL589182.1 is not in current annotation.
+Warnning: gene name AC073592.4 is not in current annotation.
+Warnning: gene name AC073593.1 is not in current annotation.
+Warnning: gene name AC073592.4,AC073593.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AC006504.5 is not in current annotation.
+Warnning: gene name AC010511.1 is not in current annotation.
+Warnning: gene name AC006504.5,AC010511.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AC023503.1 is not in current annotation.
+Warnning: gene name AC092825.1 is not in current annotation.
+Warnning: gene name AC023503.1,AC092825.1 is not in current annotation.
+Warnning: gene name AP000676.3 is not in current annotation.
+Warnning: gene name AP000676.5 is not in current annotation.
+Warnning: gene name AP000676.3,AP000676.5 is not in current annotation.
+Warnning: gene name AL161447.2 is not in current annotation.
+Warnning: gene name AL161447.1 is not in current annotation.
+Warnning: gene name AL161447.2,AL161447.1 is not in current annotation.
+Warnning: gene name MTCL3 is not in current annotation.
+Warnning: gene name MTCL3 is not in current annotation.
+Warnning: gene name AL096711.2 is not in current annotation.
+Warnning: gene name AL096711.2 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AC068448.1 is not in current annotation.
+Warnning: gene name AC139426.3 is not in current annotation.
+Warnning: gene name AC068448.1,AC139426.3 is not in current annotation.
+Warnning: gene name AC114973.1 is not in current annotation.
+Warnning: gene name AC034244.1 is not in current annotation.
+Warnning: gene name AC114973.1,AC034244.1 is not in current annotation.
+Warnning: gene name AC016629.2 is not in current annotation.
+Warnning: gene name AC016629.2 is not in current annotation.
+Warnning: gene name AL096854.1 is not in current annotation.
+Warnning: gene name AL096854.1 is not in current annotation.
+Warnning: gene name AC107918.5 is not in current annotation.
+Warnning: gene name AC107918.6 is not in current annotation.
+Warnning: gene name AC107918.5,AC107918.6 is not in current annotation.
+Warnning: gene name AL139094.1 is not in current annotation.
+Warnning: gene name AL035653.1 is not in current annotation.
+Warnning: gene name AL139094.1,AL035653.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AL136441.1 is not in current annotation.
+Warnning: gene name AL136441.1 is not in current annotation.
+Warnning: gene name AF111169.2 is not in current annotation.
+Warnning: gene name AC007686.4 is not in current annotation.
+Warnning: gene name AF111169.2,AC007686.4 is not in current annotation.
+Warnning: gene name AC005774.1 is not in current annotation.
+Warnning: gene name AC093515.1 is not in current annotation.
+Warnning: gene name AC005774.1,AC093515.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AC024603.1 is not in current annotation.
+Warnning: gene name AC013738.1 is not in current annotation.
+Warnning: gene name AC024603.1,AC013738.1 is not in current annotation.
+Warnning: gene name AC024603.1 is not in current annotation.
+Warnning: gene name AC013738.1 is not in current annotation.
+Warnning: gene name AC024603.1,AC013738.1 is not in current annotation.
+Warnning: gene name AC069288.1 is not in current annotation.
+Warnning: gene name AC069288.1 is not in current annotation.
+Warnning: gene name AL049612.1 is not in current annotation.
+Warnning: gene name AL603783.1 is not in current annotation.
+Warnning: gene name AL049612.1,AL603783.1 is not in current annotation.
+Warnning: gene name AC128716.1 is not in current annotation.
+Warnning: gene name AC128685.1 is not in current annotation.
+Warnning: gene name AC128716.1,AC128685.1 is not in current annotation.
+Warnning: gene name AC011029.1 is not in current annotation.
+Warnning: gene name AC011029.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AL157778.1 is not in current annotation.
+Warnning: gene name AL157778.1 is not in current annotation.
+Warnning: gene name AC025884.2 is not in current annotation.
+Warnning: gene name AC025884.1 is not in current annotation.
+Warnning: gene name AC025884.2,AC025884.1 is not in current annotation.
+Warnning: gene name AC093898.1 is not in current annotation.
+Warnning: gene name AC006840.1 is not in current annotation.
+Warnning: gene name AC093898.1,AC006840.1 is not in current annotation.
+Warnning: gene name AL603766.1 is not in current annotation.
+Warnning: gene name AL031056.1 is not in current annotation.
+Warnning: gene name AL603766.1,AL031056.1 is not in current annotation.
+Warnning: gene name AL713851.1 is not in current annotation.
+Warnning: gene name AL355361.1 is not in current annotation.
+Warnning: gene name AL713851.1,AL355361.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AL773545.3 is not in current annotation.
+Warnning: gene name AL773545.3 is not in current annotation.
+Warnning: gene name AC245884.5 is not in current annotation.
+Warnning: gene name AC245884.12 is not in current annotation.
+Warnning: gene name AC245884.5,AC245884.12 is not in current annotation.
+Warnning: gene name AL445307.1 is not in current annotation.
+Warnning: gene name AL078602.1 is not in current annotation.
+Warnning: gene name AL445307.1,AL078602.1 is not in current annotation.
+Warnning: gene name AC008663.1 is not in current annotation.
+Warnning: gene name AC008663.3 is not in current annotation.
+Warnning: gene name AC008663.1,AC008663.3 is not in current annotation.
+Warnning: gene name AL627223.1 is not in current annotation.
+Warnning: gene name AL627223.1,Metazoa_SRP is not in current annotation.
+Warnning: gene name AL137798.2 is not in current annotation.
+Warnning: gene name AL021920.2 is not in current annotation.
+Warnning: gene name AL137798.2,AL021920.2 is not in current annotation.
+Warnning: gene name AL022100.1 is not in current annotation.
+Warnning: gene name AL023755.1 is not in current annotation.
+Warnning: gene name AL022100.1,AL023755.1 is not in current annotation.
+Warnning: gene name AL445307.1 is not in current annotation.
+Warnning: gene name AL078602.1 is not in current annotation.
+Warnning: gene name AL445307.1,AL078602.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AC006557.6 is not in current annotation.
+Warnning: gene name AC006557.5 is not in current annotation.
+Warnning: gene name AC006557.6,AC006557.5 is not in current annotation.
+Warnning: gene name MIA-RAB4B is not in current annotation.
+Warnning: gene name MIA-RAB4B is not in current annotation.
+Warnning: gene name RAB4B-EGLN2 is not in current annotation.
+Warnning: gene name RAB4B-EGLN2 is not in current annotation.
+Warnning: gene name AC010636.2 is not in current annotation.
+Warnning: gene name AC010636.2 is not in current annotation.
+Warnning: gene name AL159987.2 is not in current annotation.
+Warnning: gene name AL159987.1 is not in current annotation.
+Warnning: gene name AL159987.2,AL159987.1 is not in current annotation.
+Warnning: gene name AC092941.1 is not in current annotation.
+Warnning: gene name AC022498.1 is not in current annotation.
+Warnning: gene name AC092941.1,AC022498.1 is not in current annotation.
+Warnning: gene name AC096949.1 is not in current annotation.
+Warnning: gene name Y_RNA,AC096949.1 is not in current annotation.
+Warnning: gene name AL050309.1 is not in current annotation.
+Warnning: gene name AL050309.1 is not in current annotation.
+Warnning: gene name AL390816.3 is not in current annotation.
+Warnning: gene name AL389895.1 is not in current annotation.
+Warnning: gene name AL390816.3,AL389895.1 is not in current annotation.
+Warnning: gene name AC002464.1 is not in current annotation.
+Warnning: gene name AL512430.3 is not in current annotation.
+Warnning: gene name AC002464.1,AL512430.3 is not in current annotation.
+Warnning: gene name AC009597.1 is not in current annotation.
+Warnning: gene name AC009597.2 is not in current annotation.
+Warnning: gene name AC009597.1,AC009597.2 is not in current annotation.
+Warnning: gene name AL050309.1 is not in current annotation.
+Warnning: gene name AL050309.1 is not in current annotation.
+Warnning: gene name AC069288.1 is not in current annotation.
+Warnning: gene name AC069288.1 is not in current annotation.
+Warnning: gene name ARB2A is not in current annotation.
+Warnning: gene name ARB2A is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AL096854.1 is not in current annotation.
+Warnning: gene name AL096854.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AC068305.2 is not in current annotation.
+Warnning: gene name AC046129.1 is not in current annotation.
+Warnning: gene name AC068305.2,AC046129.1 is not in current annotation.
+Warnning: gene name AC091893.2 is not in current annotation.
+Warnning: gene name AC091893.1 is not in current annotation.
+Warnning: gene name AC091893.2,AC091893.1 is not in current annotation.
+Warnning: gene name AC022743.1 is not in current annotation.
+Warnning: gene name AC083760.1 is not in current annotation.
+Warnning: gene name AC022743.1,AC083760.1 is not in current annotation.
+Warnning: gene name AC245884.5 is not in current annotation.
+Warnning: gene name AC245884.12 is not in current annotation.
+Warnning: gene name AC245884.5,AC245884.12 is not in current annotation.
+Warnning: gene name AC245884.5 is not in current annotation.
+Warnning: gene name AC245884.12 is not in current annotation.
+Warnning: gene name AC245884.5,AC245884.12 is not in current annotation.
+Warnning: gene name AL451085.2 is not in current annotation.
+Warnning: gene name AL451085.2 is not in current annotation.
+Warnning: gene name AL355672.1 is not in current annotation.
+Warnning: gene name AL592227.1 is not in current annotation.
+Warnning: gene name AL355672.1,AL592227.1 is not in current annotation.
+Warnning: gene name AC098965.1 is not in current annotation.
+Warnning: gene name AC109446.3 is not in current annotation.
+Warnning: gene name AC098965.1,AC109446.3 is not in current annotation.
+Warnning: gene name AC023830.1 is not in current annotation.
+Warnning: gene name AC098965.1 is not in current annotation.
+Warnning: gene name AC109446.3 is not in current annotation.
+Warnning: gene name AC023830.1 is not in current annotation.
+Warnning: gene name AC098965.1,AC109446.3 is not in current annotation.
+Warnning: gene name AL645728.1 is not in current annotation.
+Warnning: gene name AL691432.3 is not in current annotation.
+Warnning: gene name AL645728.1,AL691432.3 is not in current annotation.
+Warnning: gene name LOC102724023 is not in current annotation.
+Warnning: gene name FP565260.3 is not in current annotation.
+Warnning: gene name FP565260.5 is not in current annotation.
+Warnning: gene name LOC102724023 is not in current annotation.
+Warnning: gene name FP565260.3,FP565260.5 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AL355672.1 is not in current annotation.
+Warnning: gene name AL592227.1 is not in current annotation.
+Warnning: gene name AL355672.1,AL592227.1 is not in current annotation.
+Warnning: gene name MTRNR2L7 is not in current annotation.
+Warnning: gene name MTRNR2L7 is not in current annotation.
+Warnning: gene name FP565260.2 is not in current annotation.
+Warnning: gene name FP565260.3 is not in current annotation.
+Warnning: gene name FP565260.5 is not in current annotation.
+Warnning: gene name FP565260.2 is not in current annotation.
+Warnning: gene name FP565260.3,FP565260.5 is not in current annotation.
+Warnning: gene name AC092170.1 is not in current annotation.
+Warnning: gene name AC064856.1 is not in current annotation.
+Warnning: gene name AC092170.1,AC064856.1 is not in current annotation.
+Warnning: gene name CU104787.1 is not in current annotation.
+Warnning: gene name CU104787.1 is not in current annotation.
+Warnning: gene name AC114485.1 is not in current annotation.
+Warnning: gene name AC099567.1 is not in current annotation.
+Warnning: gene name AC114485.1,AC099567.1 is not in current annotation.
+Warnning: gene name AC068448.1 is not in current annotation.
+Warnning: gene name AC139426.3 is not in current annotation.
+Warnning: gene name AC068448.1,AC139426.3 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AC009264.1 is not in current annotation.
+Warnning: gene name AC009264.1 is not in current annotation.
+Warnning: gene name AC093817.1 is not in current annotation.
+Warnning: gene name AC093817.1 is not in current annotation.
+Warnning: gene name AL591222.3 is not in current annotation.
+Warnning: gene name AL512635.1 is not in current annotation.
+Warnning: gene name AL591222.3,AL512635.1 is not in current annotation.
+Warnning: gene name AC114485.1 is not in current annotation.
+Warnning: gene name AC099567.1 is not in current annotation.
+Warnning: gene name AC114485.1,AC099567.1 is not in current annotation.
+Warnning: gene name AP000439.2 is not in current annotation.
+Warnning: gene name AP000439.1 is not in current annotation.
+Warnning: gene name AP000439.2,AP000439.1 is not in current annotation.
+Warnning: gene name AC104958.2 is not in current annotation.
+Warnning: gene name AC068413.1 is not in current annotation.
+Warnning: gene name AC104958.2,AC068413.1 is not in current annotation.
+Warnning: gene name AC004080.17 is not in current annotation.
+Warnning: gene name AC004080.1 is not in current annotation.
+Warnning: gene name AC004080.17,AC004080.1 is not in current annotation.
+Warnning: gene name AP003392.5 is not in current annotation.
+Warnning: gene name AP003392.5 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AP000676.3 is not in current annotation.
+Warnning: gene name AP000676.5 is not in current annotation.
+Warnning: gene name AP000676.3,AP000676.5 is not in current annotation.
+Warnning: gene name AC128716.1 is not in current annotation.
+Warnning: gene name AC128685.1 is not in current annotation.
+Warnning: gene name AC128716.1,AC128685.1 is not in current annotation.
+Warnning: gene name AC006557.6 is not in current annotation.
+Warnning: gene name AC006557.5 is not in current annotation.
+Warnning: gene name AC006557.6,AC006557.5 is not in current annotation.
+Warnning: gene name AC011029.1 is not in current annotation.
+Warnning: gene name AC011029.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CU104787.1 is not in current annotation.
+Warnning: gene name CU104787.1 is not in current annotation.
+Warnning: gene name AC245884.5 is not in current annotation.
+Warnning: gene name AC245884.12 is not in current annotation.
+Warnning: gene name AC245884.5,AC245884.12 is not in current annotation.
+Warnning: gene name AL161431.1 is not in current annotation.
+Warnning: gene name AL161431.1 is not in current annotation.
+Warnning: gene name AL161431.1 is not in current annotation.
+Warnning: gene name AL161431.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AC073114.1 is not in current annotation.
+Warnning: gene name AC073114.1 is not in current annotation.
+Warnning: gene name AC018637.1 is not in current annotation.
+Warnning: gene name AC018641.1 is not in current annotation.
+Warnning: gene name AC018637.1,AC018641.1 is not in current annotation.
+Warnning: gene name AC093817.2 is not in current annotation.
+Warnning: gene name AC093817.2 is not in current annotation.
+Warnning: gene name AC022690.1 is not in current annotation.
+Warnning: gene name AC023538.1 is not in current annotation.
+Warnning: gene name AC022690.1,AC023538.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AL773545.3 is not in current annotation.
+Warnning: gene name AL773545.3 is not in current annotation.
+Warnning: gene name AC016957.1 is not in current annotation.
+Warnning: gene name AC048344.2 is not in current annotation.
+Warnning: gene name AC016957.1,AC048344.2 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AC010273.2 is not in current annotation.
+Warnning: gene name AC010273.1 is not in current annotation.
+Warnning: gene name AC010273.2,AC010273.1 is not in current annotation.
+Warnning: gene name AF228730.5 is not in current annotation.
+Warnning: gene name AF228730.5 is not in current annotation.
+Warnning: gene name AL513210.2 is not in current annotation.
+Warnning: gene name AL513210.1 is not in current annotation.
+Warnning: gene name AL513210.2,AL513210.1 is not in current annotation.
+Warnning: gene name AP003900.1 is not in current annotation.
+Warnning: gene name AC087312.1 is not in current annotation.
+Warnning: gene name AC023796.1 is not in current annotation.
+Warnning: gene name AP003900.1 is not in current annotation.
+Warnning: gene name AC087312.1,AC023796.1 is not in current annotation.
+Warnning: gene name AC109466.1 is not in current annotation.
+Warnning: gene name AC109466.1 is not in current annotation.
+Warnning: gene name AC126763.1 is not in current annotation.
+Warnning: gene name AC137803.1 is not in current annotation.
+Warnning: gene name AC126763.1,AC137803.1 is not in current annotation.
+Warnning: gene name FERRY3 is not in current annotation.
+Warnning: gene name FERRY3 is not in current annotation.
+Warnning: gene name AL049828.1 is not in current annotation.
+Warnning: gene name AL355835.1 is not in current annotation.
+Warnning: gene name AL357094.1 is not in current annotation.
+Warnning: gene name AL049828.1 is not in current annotation.
+Warnning: gene name AL355835.1,AL357094.1 is not in current annotation.
+Warnning: gene name AC105052.1 is not in current annotation.
+Warnning: gene name AC105052.1 is not in current annotation.
+Warnning: gene name AC105052.3 is not in current annotation.
+Warnning: gene name AC105052.3 is not in current annotation.
+Warnning: gene name AL080312.1 is not in current annotation.
+Warnning: gene name AL035252.2 is not in current annotation.
+Warnning: gene name AL080312.1,AL035252.2 is not in current annotation.
+Warnning: gene name AC008507.5 is not in current annotation.
+Warnning: gene name AC005597.1 is not in current annotation.
+Warnning: gene name AC008507.5,AC005597.1 is not in current annotation.
+Warnning: gene name AC243829.1 is not in current annotation.
+Warnning: gene name AC243829.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name AC090457.1 is not in current annotation.
+Warnning: gene name AC011095.1 is not in current annotation.
+Warnning: gene name AC090457.1,AC011095.1 is not in current annotation.
+Warnning: gene name AC093898.1 is not in current annotation.
+Warnning: gene name AC006840.1 is not in current annotation.
+Warnning: gene name AC093898.1,AC006840.1 is not in current annotation.
+Warnning: gene name AL133229.1 is not in current annotation.
+Warnning: gene name AL049812.2 is not in current annotation.
+Warnning: gene name AL133229.1,AL049812.2 is not in current annotation.
+Warnning: gene name AL773545.3 is not in current annotation.
+Warnning: gene name AL773545.3 is not in current annotation.
+Warnning: gene name AC024230.1 is not in current annotation.
+Warnning: gene name AC024230.1 is not in current annotation.
+Warnning: gene name AC098862.1 is not in current annotation.
+Warnning: gene name AC024230.1 is not in current annotation.
+Warnning: gene name AC024230.1,AC098862.1 is not in current annotation.
+Warnning: gene name AL445255.1 is not in current annotation.
+Warnning: gene name AL445255.1 is not in current annotation.
+Warnning: gene name AL049828.1 is not in current annotation.
+Warnning: gene name AL355835.1 is not in current annotation.
+Warnning: gene name AL357094.1 is not in current annotation.
+Warnning: gene name AL049828.1 is not in current annotation.
+Warnning: gene name AL355835.1,AL357094.1 is not in current annotation.
+cff /MetaFusion/RUNS_Results/TCGA-UCS/UCS.cff.reformat.renamed.reann.WITH_SEQ
+Add adjacent exons to cff
+3186995 annotations from /MetaFusion/reference_files/hg38_gene.bed loaded.
+16.8918139935 sec. elapsed.
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC00102', 'chrX', 'r'), ('LINC00102', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD42', 'chr22', 'r'), ('SNORD42', 'chr4', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('CD99P1', 'chrX', 'f'), ('CD99P1', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('TNFRSF10A-DT', 'chr8', 'f'), ('TNFRSF10A-DT', 'chr8', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('TRPC6P1', 'chrX', 'r'), ('TRPC6P1', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('7SK', 'chr1', 'r'), ('7SK', 'chr1', 'f'), ('7SK', 'chr11', 'f'), ('7SK', 'chr17', 'f'), ('7SK', 'chr3', 'r'), ('7SK', 'chr6', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('Y_RNA', 'chr1', 'r'), ('Y_RNA', 'chr1', 'f'), ('Y_RNA', 'chr10', 'r'), ('Y_RNA', 'chr10', 'f'), ('Y_RNA', 'chr11', 'f'), ('Y_RNA', 'chr11', 'r'), ('Y_RNA', 'chr12', 'r'), ('Y_RNA', 'chr12', 'f'), ('Y_RNA', 'chr13', 'f'), ('Y_RNA', 'chr14', 'f'), ('Y_RNA', 'chr14', 'r'), ('Y_RNA', 'chr15', 'f'), ('Y_RNA', 'chr15', 'r'), ('Y_RNA', 'chr16', 'f'), ('Y_RNA', 'chr16', 'r'), ('Y_RNA', 'chr17', 'f'), ('Y_RNA', 'chr17', 'r'), ('Y_RNA', 'chr18', 'f'), ('Y_RNA', 'chr18', 'r'), ('Y_RNA', 'chr19', 'r'), ('Y_RNA', 'chr19', 'f'), ('Y_RNA', 'chr2', 'f'), ('Y_RNA', 'chr2', 'r'), ('Y_RNA', 'chr20', 'f'), ('Y_RNA', 'chr20', 'r'), ('Y_RNA', 'chr21', 'f'), ('Y_RNA', 'chr21', 'r'), ('Y_RNA', 'chr22', 'f'), ('Y_RNA', 'chr22', 'r'), ('Y_RNA', 'chr3', 'r'), ('Y_RNA', 'chr3', 'f'), ('Y_RNA', 'chr4', 'r'), ('Y_RNA', 'chr4', 'f'), ('Y_RNA', 'chr5', 'r'), ('Y_RNA', 'chr5', 'f'), ('Y_RNA', 'chr6', 'r'), ('Y_RNA', 'chr6', 'f'), ('Y_RNA', 'chr7', 'r'), ('Y_RNA', 'chr7', 'f'), ('Y_RNA', 'chr8', 'f'), ('Y_RNA', 'chr8', 'r'), ('Y_RNA', 'chr9', 'f'), ('Y_RNA', 'chr9', 'r'), ('Y_RNA', 'chrX', 'r'), ('Y_RNA', 'chrX', 'f'), ('Y_RNA', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('WASIR1', 'chrX', 'r'), ('WASIR1', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U8', 'chr1', 'f'), ('U8', 'chr10', 'r'), ('U8', 'chr10', 'f'), ('U8', 'chr11', 'f'), ('U8', 'chr12', 'r'), ('U8', 'chr12', 'f'), ('U8', 'chr15', 'f'), ('U8', 'chr15', 'r'), ('U8', 'chr18', 'r'), ('U8', 'chr2', 'r'), ('U8', 'chr2', 'f'), ('U8', 'chr3', 'r'), ('U8', 'chr3', 'f'), ('U8', 'chr5', 'r'), ('U8', 'chr5', 'f'), ('U8', 'chr6', 'r'), ('U8', 'chr8', 'r'), ('U8', 'chr9', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U4', 'chr1', 'r'), ('U4', 'chr1', 'f'), ('U4', 'chr11', 'r'), ('U4', 'chr2', 'f'), ('U4', 'chr5', 'r'), ('U4', 'chr6', 'f'), ('U4', 'chr8', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U7', 'chr1', 'f'), ('U7', 'chr12', 'r'), ('U7', 'chr15', 'f'), ('U7', 'chr16', 'r'), ('U7', 'chr22', 'r'), ('U7', 'chr3', 'f'), ('U7', 'chrX', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U6', 'chr1', 'r'), ('U6', 'chr1', 'f'), ('U6', 'chr10', 'f'), ('U6', 'chr11', 'r'), ('U6', 'chr11', 'f'), ('U6', 'chr12', 'f'), ('U6', 'chr12', 'r'), ('U6', 'chr13', 'f'), ('U6', 'chr14', 'r'), ('U6', 'chr15', 'r'), ('U6', 'chr15', 'f'), ('U6', 'chr16', 'f'), ('U6', 'chr17', 'r'), ('U6', 'chr2', 'f'), ('U6', 'chr2', 'r'), ('U6', 'chr20', 'r'), ('U6', 'chr21', 'f'), ('U6', 'chr22', 'f'), ('U6', 'chr3', 'f'), ('U6', 'chr4', 'f'), ('U6', 'chr4', 'r'), ('U6', 'chr9', 'f'), ('U6', 'chrX', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U1', 'chr1', 'f'), ('U1', 'chr1', 'r'), ('U1', 'chr21', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U3', 'chr1', 'f'), ('U3', 'chr1', 'r'), ('U3', 'chr10', 'f'), ('U3', 'chr10', 'r'), ('U3', 'chr11', 'f'), ('U3', 'chr14', 'r'), ('U3', 'chr15', 'f'), ('U3', 'chr15', 'r'), ('U3', 'chr17', 'r'), ('U3', 'chr17', 'f'), ('U3', 'chr18', 'f'), ('U3', 'chr18', 'r'), ('U3', 'chr19', 'r'), ('U3', 'chr2', 'f'), ('U3', 'chr2', 'r'), ('U3', 'chr20', 'f'), ('U3', 'chr20', 'r'), ('U3', 'chr21', 'r'), ('U3', 'chr3', 'r'), ('U3', 'chr3', 'f'), ('U3', 'chr4', 'f'), ('U3', 'chr5', 'f'), ('U3', 'chr5', 'r'), ('U3', 'chr6', 'f'), ('U3', 'chr6', 'r'), ('U3', 'chr7', 'f'), ('U3', 'chr7', 'r'), ('U3', 'chr8', 'f'), ('U3', 'chr8', 'r'), ('U3', 'chrX', 'f'), ('U3', 'chrX', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U2', 'chr1', 'f'), ('U2', 'chr14', 'r'), ('U2', 'chr17', 'r'), ('U2', 'chr22', 'r'), ('U2', 'chr3', 'f'), ('U2', 'chr4', 'f'), ('U2', 'chr8', 'r'), ('U2', 'chr9', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('MIR6089', 'chrX', 'f'), ('MIR6089', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('IL3RA', 'chrX', 'f'), ('IL3RA', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('GTPBP6', 'chrX', 'r'), ('GTPBP6', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD18', 'chr15', 'r'), ('SNORD18', 'chr2', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LSP1P5', 'chr1', 'f'), ('LSP1P5', 'chr2', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ELOCP24', 'chrX', 'r'), ('ELOCP24', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('Vault', 'chr17', 'f'), ('Vault', 'chr17', 'r'), ('Vault', 'chr2', 'r'), ('Vault', 'chr5', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC03025', 'chr9', 'r'), ('LINC03025', 'chr9', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('5S_rRNA', 'chr1', 'r'), ('5S_rRNA', 'chr16', 'r'), ('5S_rRNA', 'chr17', 'r'), ('5S_rRNA', 'chr19', 'r'), ('5S_rRNA', 'chr2', 'r'), ('5S_rRNA', 'chr2', 'f'), ('5S_rRNA', 'chr6', 'r'), ('5S_rRNA', 'chr7', 'r'), ('5S_rRNA', 'chrX', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('WASH6P', 'chrX', 'f'), ('WASH6P', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC01238', 'chr2', 'f'), ('LINC01238', 'chr2', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('MIR3690', 'chrX', 'f'), ('MIR3690', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('HERC2P7', 'chr15', 'r'), ('HERC2P7', 'chr15', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('CTSLP2', 'chr10', 'f'), ('CTSLP2', 'chr10', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA62', 'chr1', 'f'), ('SNORA62', 'chr11', 'f'), ('SNORA62', 'chr16', 'r'), ('SNORA62', 'chr21', 'f'), ('SNORA62', 'chr3', 'f'), ('SNORA62', 'chr4', 'f'), ('SNORA62', 'chr8', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA63', 'chr1', 'f'), ('SNORA63', 'chr1', 'r'), ('SNORA63', 'chr15', 'r'), ('SNORA63', 'chr3', 'f'), ('SNORA63', 'chr4', 'f'), ('SNORA63', 'chr5', 'f'), ('SNORA63', 'chr7', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD116', 'chr1', 'r'), ('SNORD116', 'chr13', 'r'), ('SNORD116', 'chr9', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD63', 'chr17', 'r'), ('SNORD63', 'chr3', 'r'), ('SNORD63', 'chr5', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('KMT2CP1', 'chr1', 'r'), ('KMT2CP1', 'chr1', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SHOX', 'chrX', 'f'), ('SHOX', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('RPL23AP7', 'chr2', 'r'), ('RPL23AP7', 'chr22', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('DHRSX-IT1', 'chrX', 'r'), ('DHRSX-IT1', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD39', 'chr11', 'r'), ('SNORD39', 'chr2', 'f'), ('SNORD39', 'chr4', 'r'), ('SNORD39', 'chr9', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ZBED1', 'chrX', 'r'), ('ZBED1', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ASMTL-AS1', 'chrX', 'f'), ('ASMTL-AS1', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD30', 'chr11', 'r'), ('SNORD30', 'chrX', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ASMTL', 'chrX', 'r'), ('ASMTL', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('FABP5P13', 'chrX', 'r'), ('FABP5P13', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('CD99', 'chrX', 'f'), ('CD99', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('DHRSX', 'chrX', 'r'), ('DHRSX', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD33', 'chr16', 'r'), ('SNORD33', 'chr19', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('NPIPA9', 'chr16', 'f'), ('NPIPA9', 'chr16', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD81', 'chr1', 'f'), ('SNORD81', 'chr5', 'f'), ('SNORD81', 'chr7', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('PLCXD1', 'chrX', 'f'), ('PLCXD1', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('RNA5SP498', 'chrX', 'r'), ('RNA5SP498', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('Metazoa_SRP', 'chr1', 'f'), ('Metazoa_SRP', 'chr1', 'r'), ('Metazoa_SRP', 'chr10', 'f'), ('Metazoa_SRP', 'chr10', 'r'), ('Metazoa_SRP', 'chr11', 'r'), ('Metazoa_SRP', 'chr11', 'f'), ('Metazoa_SRP', 'chr12', 'f'), ('Metazoa_SRP', 'chr12', 'r'), ('Metazoa_SRP', 'chr13', 'r'), ('Metazoa_SRP', 'chr13', 'f'), ('Metazoa_SRP', 'chr14', 'r'), ('Metazoa_SRP', 'chr14', 'f'), ('Metazoa_SRP', 'chr15', 'r'), ('Metazoa_SRP', 'chr15', 'f'), ('Metazoa_SRP', 'chr16', 'f'), ('Metazoa_SRP', 'chr16', 'r'), ('Metazoa_SRP', 'chr17', 'r'), ('Metazoa_SRP', 'chr17', 'f'), ('Metazoa_SRP', 'chr18', 'r'), ('Metazoa_SRP', 'chr19', 'f'), ('Metazoa_SRP', 'chr19', 'r'), ('Metazoa_SRP', 'chr2', 'f'), ('Metazoa_SRP', 'chr2', 'r'), ('Metazoa_SRP', 'chr20', 'f'), ('Metazoa_SRP', 'chr20', 'r'), ('Metazoa_SRP', 'chr22', 'f'), ('Metazoa_SRP', 'chr22', 'r'), ('Metazoa_SRP', 'chr3', 'r'), ('Metazoa_SRP', 'chr3', 'f'), ('Metazoa_SRP', 'chr4', 'r'), ('Metazoa_SRP', 'chr4', 'f'), ('Metazoa_SRP', 'chr5', 'f'), ('Metazoa_SRP', 'chr5', 'r'), ('Metazoa_SRP', 'chr6', 'f'), ('Metazoa_SRP', 'chr6', 'r'), ('Metazoa_SRP', 'chr7', 'f'), ('Metazoa_SRP', 'chr7', 'r'), ('Metazoa_SRP', 'chr8', 'f'), ('Metazoa_SRP', 'chr8', 'r'), ('Metazoa_SRP', 'chr9', 'f'), ('Metazoa_SRP', 'chr9', 'r'), ('Metazoa_SRP', 'chrX', 'r'), ('Metazoa_SRP', 'chrX', 'f'), ('Metazoa_SRP', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('CSF2RA', 'chrX', 'f'), ('CSF2RA', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('PPP2R3B', 'chrX', 'r'), ('PPP2R3B', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('DPH3P2', 'chrX', 'f'), ('DPH3P2', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ASMT', 'chrX', 'f'), ('ASMT', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('IL9R', 'chrX', 'f'), ('IL9R', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('VAMP7', 'chrX', 'f'), ('VAMP7', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC02968', 'chrX', 'f'), ('LINC02968', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA75', 'chr12', 'r'), ('SNORA75', 'chr12', 'f'), ('SNORA75', 'chr16', 'f'), ('SNORA75', 'chr2', 'r'), ('SNORA75', 'chr4', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA74', 'chr12', 'r'), ('SNORA74', 'chr17', 'f'), ('SNORA74', 'chr2', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA73', 'chr18', 'f'), ('SNORA73', 'chr18', 'r'), ('SNORA73', 'chr6', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA72', 'chr1', 'r'), ('SNORA72', 'chr1', 'f'), ('SNORA72', 'chr2', 'f'), ('SNORA72', 'chr3', 'f'), ('SNORA72', 'chr3', 'r'), ('SNORA72', 'chr8', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA71', 'chr10', 'f'), ('SNORA71', 'chr20', 'r'), ('SNORA71', 'chr20', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA70', 'chr1', 'r'), ('SNORA70', 'chr12', 'r'), ('SNORA70', 'chr12', 'f'), ('SNORA70', 'chr14', 'f'), ('SNORA70', 'chr16', 'r'), ('SNORA70', 'chr17', 'r'), ('SNORA70', 'chr17', 'f'), ('SNORA70', 'chr18', 'r'), ('SNORA70', 'chr19', 'f'), ('SNORA70', 'chr21', 'f'), ('SNORA70', 'chr21', 'r'), ('SNORA70', 'chr3', 'f'), ('SNORA70', 'chr4', 'f'), ('SNORA70', 'chr5', 'f'), ('SNORA70', 'chr6', 'f'), ('SNORA70', 'chr8', 'r'), ('SNORA70', 'chr8', 'f'), ('SNORA70', 'chr9', 'f'), ('SNORA70', 'chr9', 'r'), ('SNORA70', 'chrX', 'f'), ('SNORA70', 'chrY', 'r'), ('SNORA70', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('AMD1P2', 'chrX', 'r'), ('AMD1P2', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('CRLF2', 'chrX', 'r'), ('CRLF2', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD115', 'chr10', 'f'), ('SNORD115', 'chr15', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('AKAP17A', 'chrX', 'f'), ('AKAP17A', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD27', 'chr11', 'r'), ('SNORD27', 'chr13', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('P2RY8', 'chrX', 'r'), ('P2RY8', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('NPEPPSP1', 'chr17', 'f'), ('NPEPPSP1', 'chr17', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC00685', 'chrX', 'f'), ('LINC00685', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('DDX11L2', 'chr1', 'f'), ('DDX11L2', 'chr2', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('GABARAPL3', 'chr15', 'f'), ('GABARAPL3', 'chr15', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC02256', 'chr15', 'r'), ('LINC02256', 'chr15', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('5_8S_rRNA', 'chr14', 'f'), ('5_8S_rRNA', 'chr20', 'r'), ('5_8S_rRNA', 'chr21', 'f'), ('5_8S_rRNA', 'chr22', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('RPL14P5', 'chrX', 'r'), ('RPL14P5', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC00106', 'chrX', 'f'), ('LINC00106', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ANKRD20A5P', 'chr18', 'f'), ('ANKRD20A5P', 'chr9', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SLC25A6', 'chrX', 'r'), ('SLC25A6', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('KRT18P53', 'chrX', 'r'), ('KRT18P53', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('DDX11L16', 'chr15', 'r'), ('DDX11L16', 'chr16', 'f'), ('DDX11L16', 'chrX', 'r'), ('DDX11L16', 'chrY', 'r')]
+Gene intervals loaded.
+23.7749731541 sec. elapsed.
+Transcript annotations loaded.
+16.7728331089 sec. elapsed.
+Merge cff by exons
+Loading required package: graph
+Loading required package: BiocGenerics
+
+Attaching package: 'BiocGenerics'
+
+The following objects are masked from 'package:stats':
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from 'package:base':
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Reading FID.intersections.tsv file
+7495 records to build graph
+Building graph
+output cis-sage.cluster file
+ReadThrough, callerfilter 1
+python callerfilter_num.py --cluster /MetaFusion/RUNS_Results/TCGA-UCS/UCS.cff.reformat.renamed.reann.WITH_SEQ.exons.cluster --num_tools 1 | grep -v ReadThrough > /MetaFusion/RUNS_Results/TCGA-UCS/UCS.cff.reformat.renamed.reann.WITH_SEQ.exons.cluster.RT_filter.callerfilter.1
+blocklist filter
+ANC adjacent noncoding filter
+Rank and generate final.cluster
+Running FusionAnnotator
+-parsing annotation gene spans
+-warning, no gene stored for identifier: [FIGNL2-DT]
+-warning, no gene stored for identifier: [AC010163.3]
+-warning, no gene stored for identifier: [SRP14-DT]
+-warning, no gene stored for identifier: [CSTPP1]
+-warning, no gene stored for identifier: [CFAP68]
+-warning, no gene stored for identifier: [DNAI7]
+-warning, no gene stored for identifier: [AC069288.1]
+-warning, no gene stored for identifier: [SLC6A12-AS1]
+-warning, no gene stored for identifier: [AP000944.5]
+-warning, no gene stored for identifier: [FHIP2A]
+-warning, no gene stored for identifier: [LINC02661]
+-warning, no gene stored for identifier: [AC074091.2]
+-warning, no gene stored for identifier: [AC005914.1]
+-warning, no gene stored for identifier: [P3R3URF-PIK3R3]
+-warning, no gene stored for identifier: [AL021155.4]
+-warning, no gene stored for identifier: [AC104370.1]
+-warning, no gene stored for identifier: [NHERF1]
+-warning, no gene stored for identifier: [AC006059.4]
+-warning, no gene stored for identifier: [AC091893.2]
+-warning, no gene stored for identifier: [AP001931.2]
+-warning, no gene stored for identifier: [UQCC5]
+-warning, no gene stored for identifier: [ZNG1B]
+-warning, no gene stored for identifier: [YJU2B]
+-warning, no gene stored for identifier: [AC009315.1]
+-warning, no gene stored for identifier: [AC012435.3]
+-warning, no gene stored for identifier: [AC012459.1]
+-warning, no gene stored for identifier: [AC097376.3]
+-warning, no gene stored for identifier: [AC110614.1]
+-warning, no gene stored for identifier: [AC136431.1]
+-warning, no gene stored for identifier: [PPM1F-AS1]
+-warning, no gene stored for identifier: [AL022724.2]
+-warning, no gene stored for identifier: [AL050309.1]
+-warning, no gene stored for identifier: [AL355672.1]
+-warning, no gene stored for identifier: [AP002748.5]
+-warning, no gene stored for identifier: [ARB2A]
+-warning, no gene stored for identifier: [ARHGAP29-AS1]
+-warning, no gene stored for identifier: [ARK2N]
+-warning, no gene stored for identifier: [LINC02842]
+-warning, no gene stored for identifier: [TNPO1-DT]
+-warning, no gene stored for identifier: [CARD17P]
+-warning, no gene stored for identifier: [EMSLR]
+-warning, no gene stored for identifier: [CCDST]
+-warning, no gene stored for identifier: [AC093866.1]
+-warning, no gene stored for identifier: [PHAF1]
+-warning, no gene stored for identifier: [AL358232.2]
+-warning, no gene stored for identifier: [AC013287.1]
+-warning, no gene stored for identifier: [SCTR-AS1]
+-warning, no gene stored for identifier: [DUX4L37]
+-warning, no gene stored for identifier: [DUX4L34]
+-warning, no gene stored for identifier: [DUX4L35]
+-warning, no gene stored for identifier: [AC046134.2]
+-warning, no gene stored for identifier: [STX17-DT]
+-warning, no gene stored for identifier: [ZNF8-ERVK3-1]
+-warning, no gene stored for identifier: [LINC02802]
+-warning, no gene stored for identifier: [AC093791.2]
+-warning, no gene stored for identifier: [AC115100.1]
+-warning, no gene stored for identifier: [HMGA2-AS1]
+-warning, no gene stored for identifier: [AL356295.1]
+-warning, no gene stored for identifier: [HYCC1]
+-warning, no gene stored for identifier: [TOLLIP-DT]
+-warning, no gene stored for identifier: [LINC02903]
+-warning, no gene stored for identifier: [AC093898.1]
+-warning, no gene stored for identifier: [MMADHC-DT]
+-warning, no gene stored for identifier: [AC109583.4]
+-warning, no gene stored for identifier: [AL033519.4]
+-warning, no gene stored for identifier: [AL049828.1]
+-warning, no gene stored for identifier: [AC076968.2]
+-warning, no gene stored for identifier: [NALF1]
+-warning, no gene stored for identifier: [NIHCOLE]
+-warning, no gene stored for identifier: [AC099487.2]
+-warning, no gene stored for identifier: [NPEPPSP1]
+-warning, no gene stored for identifier: [AL035461.3]
+-warning, no gene stored for identifier: [AP001591.1]
+-warning, no gene stored for identifier: [AC126121.3]
+-warning, no gene stored for identifier: [AC093418.1]
+-warning, no gene stored for identifier: [PALS1]
+-warning, no gene stored for identifier: [AL034550.3]
+-warning, no gene stored for identifier: [AC092445.1]
+-warning, no gene stored for identifier: [SLC7A14-AS1]
+-warning, no gene stored for identifier: [AC107398.5]
+-warning, no gene stored for identifier: [AC002059.3]
+-warning, no gene stored for identifier: [PTGR3]
+-warning, no gene stored for identifier: [LINC02845]
+-warning, no gene stored for identifier: [AL355501.1]
+-warning, no gene stored for identifier: [LINC02621]
+-warning, no gene stored for identifier: [ANAPC1P2]
+-warning, no gene stored for identifier: [AL138778.1]
+-warning, no gene stored for identifier: [RPS3AP21]
+-warning, no gene stored for identifier: [LINC02826]
+-warning, no gene stored for identifier: [AP001021.3]
+-warning, no gene stored for identifier: [SMC5-DT]
+-warning, no gene stored for identifier: [AC048352.1]
+-warning, no gene stored for identifier: [AL357556.3]
+-warning, no gene stored for identifier: [EOLA2-DT]
+-warning, no gene stored for identifier: [FHIP1A]
+-warning, no gene stored for identifier: [B3GAT1-DT]
+-warning, no gene stored for identifier: [UBL7-DT]
+-warning, no gene stored for identifier: [CFAP418-AS1]
+-warning, no gene stored for identifier: [AP001178.4]
+-warning, no gene stored for identifier: [ZFTA]
+Adding FusionAnnotator database hits to final.cluster.CANCER_FUSIONS file
+no benchmarking performed
+Done
+End at Sat Oct 5 09:06:45 UTC 2024 -----------
