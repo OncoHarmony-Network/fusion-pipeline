@@ -1,0 +1,525 @@
+Start at Sat Oct 5 07:30:21 UTC 2024 -----------
+Generating output in /MetaFusion/RUNS_Results/TARGET-AML_Cell_Lines
+mkdir: cannot create directory '/MetaFusion/RUNS_Results/TARGET-AML_Cell_Lines': File exists
+Rename cff
+python rename_cff_file_genes.MetaFusion.py /MetaFusion/RUNS_Results/TARGET-AML_Cell_Lines/Cell_Lines.cff.reformat /MetaFusion/reference_files/Homo_sapiens.gene_info > /MetaFusion/RUNS_Results/TARGET-AML_Cell_Lines/Cell_Lines.cff.reformat.renamed
+Annotate cff, extract sequence surrounding breakpoint
+3186995 annotations from /MetaFusion/reference_files/hg38_gene.bed loaded.
+16.6899149418 sec. elapsed.
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC00102', 'chrX', 'r'), ('LINC00102', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD42', 'chr22', 'r'), ('SNORD42', 'chr4', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('CD99P1', 'chrX', 'f'), ('CD99P1', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('TNFRSF10A-DT', 'chr8', 'f'), ('TNFRSF10A-DT', 'chr8', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('TRPC6P1', 'chrX', 'r'), ('TRPC6P1', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('7SK', 'chr1', 'r'), ('7SK', 'chr1', 'f'), ('7SK', 'chr11', 'f'), ('7SK', 'chr17', 'f'), ('7SK', 'chr3', 'r'), ('7SK', 'chr6', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('Y_RNA', 'chr1', 'r'), ('Y_RNA', 'chr1', 'f'), ('Y_RNA', 'chr10', 'r'), ('Y_RNA', 'chr10', 'f'), ('Y_RNA', 'chr11', 'f'), ('Y_RNA', 'chr11', 'r'), ('Y_RNA', 'chr12', 'r'), ('Y_RNA', 'chr12', 'f'), ('Y_RNA', 'chr13', 'f'), ('Y_RNA', 'chr14', 'f'), ('Y_RNA', 'chr14', 'r'), ('Y_RNA', 'chr15', 'f'), ('Y_RNA', 'chr15', 'r'), ('Y_RNA', 'chr16', 'f'), ('Y_RNA', 'chr16', 'r'), ('Y_RNA', 'chr17', 'f'), ('Y_RNA', 'chr17', 'r'), ('Y_RNA', 'chr18', 'f'), ('Y_RNA', 'chr18', 'r'), ('Y_RNA', 'chr19', 'r'), ('Y_RNA', 'chr19', 'f'), ('Y_RNA', 'chr2', 'f'), ('Y_RNA', 'chr2', 'r'), ('Y_RNA', 'chr20', 'f'), ('Y_RNA', 'chr20', 'r'), ('Y_RNA', 'chr21', 'f'), ('Y_RNA', 'chr21', 'r'), ('Y_RNA', 'chr22', 'f'), ('Y_RNA', 'chr22', 'r'), ('Y_RNA', 'chr3', 'r'), ('Y_RNA', 'chr3', 'f'), ('Y_RNA', 'chr4', 'r'), ('Y_RNA', 'chr4', 'f'), ('Y_RNA', 'chr5', 'r'), ('Y_RNA', 'chr5', 'f'), ('Y_RNA', 'chr6', 'r'), ('Y_RNA', 'chr6', 'f'), ('Y_RNA', 'chr7', 'r'), ('Y_RNA', 'chr7', 'f'), ('Y_RNA', 'chr8', 'f'), ('Y_RNA', 'chr8', 'r'), ('Y_RNA', 'chr9', 'f'), ('Y_RNA', 'chr9', 'r'), ('Y_RNA', 'chrX', 'r'), ('Y_RNA', 'chrX', 'f'), ('Y_RNA', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('WASIR1', 'chrX', 'r'), ('WASIR1', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U8', 'chr1', 'f'), ('U8', 'chr10', 'r'), ('U8', 'chr10', 'f'), ('U8', 'chr11', 'f'), ('U8', 'chr12', 'r'), ('U8', 'chr12', 'f'), ('U8', 'chr15', 'f'), ('U8', 'chr15', 'r'), ('U8', 'chr18', 'r'), ('U8', 'chr2', 'r'), ('U8', 'chr2', 'f'), ('U8', 'chr3', 'r'), ('U8', 'chr3', 'f'), ('U8', 'chr5', 'r'), ('U8', 'chr5', 'f'), ('U8', 'chr6', 'r'), ('U8', 'chr8', 'r'), ('U8', 'chr9', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U4', 'chr1', 'r'), ('U4', 'chr1', 'f'), ('U4', 'chr11', 'r'), ('U4', 'chr2', 'f'), ('U4', 'chr5', 'r'), ('U4', 'chr6', 'f'), ('U4', 'chr8', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U7', 'chr1', 'f'), ('U7', 'chr12', 'r'), ('U7', 'chr15', 'f'), ('U7', 'chr16', 'r'), ('U7', 'chr22', 'r'), ('U7', 'chr3', 'f'), ('U7', 'chrX', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U6', 'chr1', 'r'), ('U6', 'chr1', 'f'), ('U6', 'chr10', 'f'), ('U6', 'chr11', 'r'), ('U6', 'chr11', 'f'), ('U6', 'chr12', 'f'), ('U6', 'chr12', 'r'), ('U6', 'chr13', 'f'), ('U6', 'chr14', 'r'), ('U6', 'chr15', 'r'), ('U6', 'chr15', 'f'), ('U6', 'chr16', 'f'), ('U6', 'chr17', 'r'), ('U6', 'chr2', 'f'), ('U6', 'chr2', 'r'), ('U6', 'chr20', 'r'), ('U6', 'chr21', 'f'), ('U6', 'chr22', 'f'), ('U6', 'chr3', 'f'), ('U6', 'chr4', 'f'), ('U6', 'chr4', 'r'), ('U6', 'chr9', 'f'), ('U6', 'chrX', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U1', 'chr1', 'f'), ('U1', 'chr1', 'r'), ('U1', 'chr21', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U3', 'chr1', 'f'), ('U3', 'chr1', 'r'), ('U3', 'chr10', 'f'), ('U3', 'chr10', 'r'), ('U3', 'chr11', 'f'), ('U3', 'chr14', 'r'), ('U3', 'chr15', 'f'), ('U3', 'chr15', 'r'), ('U3', 'chr17', 'r'), ('U3', 'chr17', 'f'), ('U3', 'chr18', 'f'), ('U3', 'chr18', 'r'), ('U3', 'chr19', 'r'), ('U3', 'chr2', 'f'), ('U3', 'chr2', 'r'), ('U3', 'chr20', 'f'), ('U3', 'chr20', 'r'), ('U3', 'chr21', 'r'), ('U3', 'chr3', 'r'), ('U3', 'chr3', 'f'), ('U3', 'chr4', 'f'), ('U3', 'chr5', 'f'), ('U3', 'chr5', 'r'), ('U3', 'chr6', 'f'), ('U3', 'chr6', 'r'), ('U3', 'chr7', 'f'), ('U3', 'chr7', 'r'), ('U3', 'chr8', 'f'), ('U3', 'chr8', 'r'), ('U3', 'chrX', 'f'), ('U3', 'chrX', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U2', 'chr1', 'f'), ('U2', 'chr14', 'r'), ('U2', 'chr17', 'r'), ('U2', 'chr22', 'r'), ('U2', 'chr3', 'f'), ('U2', 'chr4', 'f'), ('U2', 'chr8', 'r'), ('U2', 'chr9', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('MIR6089', 'chrX', 'f'), ('MIR6089', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('IL3RA', 'chrX', 'f'), ('IL3RA', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('GTPBP6', 'chrX', 'r'), ('GTPBP6', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD18', 'chr15', 'r'), ('SNORD18', 'chr2', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LSP1P5', 'chr1', 'f'), ('LSP1P5', 'chr2', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ELOCP24', 'chrX', 'r'), ('ELOCP24', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('Vault', 'chr17', 'f'), ('Vault', 'chr17', 'r'), ('Vault', 'chr2', 'r'), ('Vault', 'chr5', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC03025', 'chr9', 'r'), ('LINC03025', 'chr9', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('5S_rRNA', 'chr1', 'r'), ('5S_rRNA', 'chr16', 'r'), ('5S_rRNA', 'chr17', 'r'), ('5S_rRNA', 'chr19', 'r'), ('5S_rRNA', 'chr2', 'r'), ('5S_rRNA', 'chr2', 'f'), ('5S_rRNA', 'chr6', 'r'), ('5S_rRNA', 'chr7', 'r'), ('5S_rRNA', 'chrX', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('WASH6P', 'chrX', 'f'), ('WASH6P', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC01238', 'chr2', 'f'), ('LINC01238', 'chr2', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('MIR3690', 'chrX', 'f'), ('MIR3690', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('HERC2P7', 'chr15', 'r'), ('HERC2P7', 'chr15', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('CTSLP2', 'chr10', 'f'), ('CTSLP2', 'chr10', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA62', 'chr1', 'f'), ('SNORA62', 'chr11', 'f'), ('SNORA62', 'chr16', 'r'), ('SNORA62', 'chr21', 'f'), ('SNORA62', 'chr3', 'f'), ('SNORA62', 'chr4', 'f'), ('SNORA62', 'chr8', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA63', 'chr1', 'f'), ('SNORA63', 'chr1', 'r'), ('SNORA63', 'chr15', 'r'), ('SNORA63', 'chr3', 'f'), ('SNORA63', 'chr4', 'f'), ('SNORA63', 'chr5', 'f'), ('SNORA63', 'chr7', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD116', 'chr1', 'r'), ('SNORD116', 'chr13', 'r'), ('SNORD116', 'chr9', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD63', 'chr17', 'r'), ('SNORD63', 'chr3', 'r'), ('SNORD63', 'chr5', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('KMT2CP1', 'chr1', 'r'), ('KMT2CP1', 'chr1', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SHOX', 'chrX', 'f'), ('SHOX', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('RPL23AP7', 'chr2', 'r'), ('RPL23AP7', 'chr22', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('DHRSX-IT1', 'chrX', 'r'), ('DHRSX-IT1', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD39', 'chr11', 'r'), ('SNORD39', 'chr2', 'f'), ('SNORD39', 'chr4', 'r'), ('SNORD39', 'chr9', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ZBED1', 'chrX', 'r'), ('ZBED1', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ASMTL-AS1', 'chrX', 'f'), ('ASMTL-AS1', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD30', 'chr11', 'r'), ('SNORD30', 'chrX', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ASMTL', 'chrX', 'r'), ('ASMTL', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('FABP5P13', 'chrX', 'r'), ('FABP5P13', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('CD99', 'chrX', 'f'), ('CD99', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('DHRSX', 'chrX', 'r'), ('DHRSX', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD33', 'chr16', 'r'), ('SNORD33', 'chr19', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('NPIPA9', 'chr16', 'f'), ('NPIPA9', 'chr16', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD81', 'chr1', 'f'), ('SNORD81', 'chr5', 'f'), ('SNORD81', 'chr7', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('PLCXD1', 'chrX', 'f'), ('PLCXD1', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('RNA5SP498', 'chrX', 'r'), ('RNA5SP498', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('Metazoa_SRP', 'chr1', 'f'), ('Metazoa_SRP', 'chr1', 'r'), ('Metazoa_SRP', 'chr10', 'f'), ('Metazoa_SRP', 'chr10', 'r'), ('Metazoa_SRP', 'chr11', 'r'), ('Metazoa_SRP', 'chr11', 'f'), ('Metazoa_SRP', 'chr12', 'f'), ('Metazoa_SRP', 'chr12', 'r'), ('Metazoa_SRP', 'chr13', 'r'), ('Metazoa_SRP', 'chr13', 'f'), ('Metazoa_SRP', 'chr14', 'r'), ('Metazoa_SRP', 'chr14', 'f'), ('Metazoa_SRP', 'chr15', 'r'), ('Metazoa_SRP', 'chr15', 'f'), ('Metazoa_SRP', 'chr16', 'f'), ('Metazoa_SRP', 'chr16', 'r'), ('Metazoa_SRP', 'chr17', 'r'), ('Metazoa_SRP', 'chr17', 'f'), ('Metazoa_SRP', 'chr18', 'r'), ('Metazoa_SRP', 'chr19', 'f'), ('Metazoa_SRP', 'chr19', 'r'), ('Metazoa_SRP', 'chr2', 'f'), ('Metazoa_SRP', 'chr2', 'r'), ('Metazoa_SRP', 'chr20', 'f'), ('Metazoa_SRP', 'chr20', 'r'), ('Metazoa_SRP', 'chr22', 'f'), ('Metazoa_SRP', 'chr22', 'r'), ('Metazoa_SRP', 'chr3', 'r'), ('Metazoa_SRP', 'chr3', 'f'), ('Metazoa_SRP', 'chr4', 'r'), ('Metazoa_SRP', 'chr4', 'f'), ('Metazoa_SRP', 'chr5', 'f'), ('Metazoa_SRP', 'chr5', 'r'), ('Metazoa_SRP', 'chr6', 'f'), ('Metazoa_SRP', 'chr6', 'r'), ('Metazoa_SRP', 'chr7', 'f'), ('Metazoa_SRP', 'chr7', 'r'), ('Metazoa_SRP', 'chr8', 'f'), ('Metazoa_SRP', 'chr8', 'r'), ('Metazoa_SRP', 'chr9', 'f'), ('Metazoa_SRP', 'chr9', 'r'), ('Metazoa_SRP', 'chrX', 'r'), ('Metazoa_SRP', 'chrX', 'f'), ('Metazoa_SRP', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('CSF2RA', 'chrX', 'f'), ('CSF2RA', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('PPP2R3B', 'chrX', 'r'), ('PPP2R3B', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('DPH3P2', 'chrX', 'f'), ('DPH3P2', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ASMT', 'chrX', 'f'), ('ASMT', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('IL9R', 'chrX', 'f'), ('IL9R', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('VAMP7', 'chrX', 'f'), ('VAMP7', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC02968', 'chrX', 'f'), ('LINC02968', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA75', 'chr12', 'r'), ('SNORA75', 'chr12', 'f'), ('SNORA75', 'chr16', 'f'), ('SNORA75', 'chr2', 'r'), ('SNORA75', 'chr4', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA74', 'chr12', 'r'), ('SNORA74', 'chr17', 'f'), ('SNORA74', 'chr2', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA73', 'chr18', 'f'), ('SNORA73', 'chr18', 'r'), ('SNORA73', 'chr6', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA72', 'chr1', 'r'), ('SNORA72', 'chr1', 'f'), ('SNORA72', 'chr2', 'f'), ('SNORA72', 'chr3', 'f'), ('SNORA72', 'chr3', 'r'), ('SNORA72', 'chr8', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA71', 'chr10', 'f'), ('SNORA71', 'chr20', 'r'), ('SNORA71', 'chr20', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA70', 'chr1', 'r'), ('SNORA70', 'chr12', 'r'), ('SNORA70', 'chr12', 'f'), ('SNORA70', 'chr14', 'f'), ('SNORA70', 'chr16', 'r'), ('SNORA70', 'chr17', 'r'), ('SNORA70', 'chr17', 'f'), ('SNORA70', 'chr18', 'r'), ('SNORA70', 'chr19', 'f'), ('SNORA70', 'chr21', 'f'), ('SNORA70', 'chr21', 'r'), ('SNORA70', 'chr3', 'f'), ('SNORA70', 'chr4', 'f'), ('SNORA70', 'chr5', 'f'), ('SNORA70', 'chr6', 'f'), ('SNORA70', 'chr8', 'r'), ('SNORA70', 'chr8', 'f'), ('SNORA70', 'chr9', 'f'), ('SNORA70', 'chr9', 'r'), ('SNORA70', 'chrX', 'f'), ('SNORA70', 'chrY', 'r'), ('SNORA70', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('AMD1P2', 'chrX', 'r'), ('AMD1P2', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('CRLF2', 'chrX', 'r'), ('CRLF2', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD115', 'chr10', 'f'), ('SNORD115', 'chr15', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('AKAP17A', 'chrX', 'f'), ('AKAP17A', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD27', 'chr11', 'r'), ('SNORD27', 'chr13', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('P2RY8', 'chrX', 'r'), ('P2RY8', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('NPEPPSP1', 'chr17', 'f'), ('NPEPPSP1', 'chr17', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC00685', 'chrX', 'f'), ('LINC00685', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('DDX11L2', 'chr1', 'f'), ('DDX11L2', 'chr2', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('GABARAPL3', 'chr15', 'f'), ('GABARAPL3', 'chr15', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC02256', 'chr15', 'r'), ('LINC02256', 'chr15', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('5_8S_rRNA', 'chr14', 'f'), ('5_8S_rRNA', 'chr20', 'r'), ('5_8S_rRNA', 'chr21', 'f'), ('5_8S_rRNA', 'chr22', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('RPL14P5', 'chrX', 'r'), ('RPL14P5', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC00106', 'chrX', 'f'), ('LINC00106', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ANKRD20A5P', 'chr18', 'f'), ('ANKRD20A5P', 'chr9', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SLC25A6', 'chrX', 'r'), ('SLC25A6', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('KRT18P53', 'chrX', 'r'), ('KRT18P53', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('DDX11L16', 'chr15', 'r'), ('DDX11L16', 'chr16', 'f'), ('DDX11L16', 'chrX', 'r'), ('DDX11L16', 'chrY', 'r')]
+Gene intervals loaded.
+23.4591419697 sec. elapsed.
+Transcript annotations loaded.
+15.9266049862 sec. elapsed.
+Warnning: gene name AL096854.1 is not in current annotation.
+Warnning: gene name AL096854.1 is not in current annotation.
+Warnning: gene name AC008695.1 is not in current annotation.
+Warnning: gene name AC008695.1 is not in current annotation.
+Warnning: gene name LOC105369725 is not in current annotation.
+Warnning: gene name LOC105369725 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name LOC100128906 is not in current annotation.
+Warnning: gene name LOC100128906 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name RPL18AP5 is not in current annotation.
+Warnning: gene name RPL18AP5 is not in current annotation.
+Warnning: gene name AC114798.1 is not in current annotation.
+Warnning: gene name AC079766.1 is not in current annotation.
+Warnning: gene name AC114798.1,AC079766.1 is not in current annotation.
+Warnning: gene name LOC102724023 is not in current annotation.
+Warnning: gene name LOC102723996 is not in current annotation.
+Warnning: gene name LOC102724023 is not in current annotation.
+Warnning: gene name LOC102723996 is not in current annotation.
+Warnning: gene name AL512603.2 is not in current annotation.
+Warnning: gene name AL512603.1 is not in current annotation.
+Warnning: gene name AL512603.2,AL512603.1 is not in current annotation.
+Warnning: gene name AC114798.1 is not in current annotation.
+Warnning: gene name AC079766.1 is not in current annotation.
+Warnning: gene name AC114798.1,AC079766.1 is not in current annotation.
+Warnning: gene name AC114798.1 is not in current annotation.
+Warnning: gene name AC079766.1 is not in current annotation.
+Warnning: gene name AC114798.1,AC079766.1 is not in current annotation.
+Warnning: gene name AL512603.2 is not in current annotation.
+Warnning: gene name AL512603.1 is not in current annotation.
+Warnning: gene name AL512603.2,AL512603.1 is not in current annotation.
+Warnning: gene name FP236383.13 is not in current annotation.
+Warnning: gene name FP236383.13 is not in current annotation.
+Warnning: gene name AC016957.1 is not in current annotation.
+Warnning: gene name AC048344.2 is not in current annotation.
+Warnning: gene name AC016957.1,AC048344.2 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name LOC112268018 is not in current annotation.
+Warnning: gene name LOC112268018 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name LOC124900358 is not in current annotation.
+Warnning: gene name LOC124900358 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name IGKV1OR2-108 is not in current annotation.
+Warnning: gene name AC016745.1 is not in current annotation.
+Warnning: gene name AC016745.2 is not in current annotation.
+Warnning: gene name IGKV1OR2-108 is not in current annotation.
+Warnning: gene name AC016745.1,AC016745.2 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name CR786580.1 is not in current annotation.
+Warnning: gene name LOC124902595 is not in current annotation.
+Warnning: gene name LOC124902595 is not in current annotation.
+Warnning: gene name AL096854.1 is not in current annotation.
+Warnning: gene name AL096854.1 is not in current annotation.
+Warnning: gene name AC123912.2 is not in current annotation.
+Warnning: gene name AC123912.5 is not in current annotation.
+Warnning: gene name AC123912.2,AC123912.5 is not in current annotation.
+Warnning: gene name AC011603.2 is not in current annotation.
+Warnning: gene name AC011603.2 is not in current annotation.
+Warnning: gene name LOC124900295 is not in current annotation.
+Warnning: gene name LOC124900295 is not in current annotation.
+Warnning: gene name SPATA31F3 is not in current annotation.
+Warnning: gene name SPATA31F3 is not in current annotation.
+Warnning: gene name AL358053.1 is not in current annotation.
+Warnning: gene name AL591644.1 is not in current annotation.
+Warnning: gene name AL358053.1,AL591644.1 is not in current annotation.
+Warnning: gene name AL358053.1 is not in current annotation.
+Warnning: gene name AL591644.1 is not in current annotation.
+Warnning: gene name AL358053.1,AL591644.1 is not in current annotation.
+Warnning: gene name FP671120.2 is not in current annotation.
+Warnning: gene name CR381572.2 is not in current annotation.
+Warnning: gene name CR381572.1 is not in current annotation.
+Warnning: gene name FP671120.2 is not in current annotation.
+Warnning: gene name CR381572.2,CR381572.1 is not in current annotation.
+cff /MetaFusion/RUNS_Results/TARGET-AML_Cell_Lines/Cell_Lines.cff.reformat.renamed.reann.WITH_SEQ
+Add adjacent exons to cff
+3186995 annotations from /MetaFusion/reference_files/hg38_gene.bed loaded.
+16.639218092 sec. elapsed.
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC00102', 'chrX', 'r'), ('LINC00102', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD42', 'chr22', 'r'), ('SNORD42', 'chr4', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('CD99P1', 'chrX', 'f'), ('CD99P1', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('TNFRSF10A-DT', 'chr8', 'f'), ('TNFRSF10A-DT', 'chr8', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('TRPC6P1', 'chrX', 'r'), ('TRPC6P1', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('7SK', 'chr1', 'r'), ('7SK', 'chr1', 'f'), ('7SK', 'chr11', 'f'), ('7SK', 'chr17', 'f'), ('7SK', 'chr3', 'r'), ('7SK', 'chr6', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('Y_RNA', 'chr1', 'r'), ('Y_RNA', 'chr1', 'f'), ('Y_RNA', 'chr10', 'r'), ('Y_RNA', 'chr10', 'f'), ('Y_RNA', 'chr11', 'f'), ('Y_RNA', 'chr11', 'r'), ('Y_RNA', 'chr12', 'r'), ('Y_RNA', 'chr12', 'f'), ('Y_RNA', 'chr13', 'f'), ('Y_RNA', 'chr14', 'f'), ('Y_RNA', 'chr14', 'r'), ('Y_RNA', 'chr15', 'f'), ('Y_RNA', 'chr15', 'r'), ('Y_RNA', 'chr16', 'f'), ('Y_RNA', 'chr16', 'r'), ('Y_RNA', 'chr17', 'f'), ('Y_RNA', 'chr17', 'r'), ('Y_RNA', 'chr18', 'f'), ('Y_RNA', 'chr18', 'r'), ('Y_RNA', 'chr19', 'r'), ('Y_RNA', 'chr19', 'f'), ('Y_RNA', 'chr2', 'f'), ('Y_RNA', 'chr2', 'r'), ('Y_RNA', 'chr20', 'f'), ('Y_RNA', 'chr20', 'r'), ('Y_RNA', 'chr21', 'f'), ('Y_RNA', 'chr21', 'r'), ('Y_RNA', 'chr22', 'f'), ('Y_RNA', 'chr22', 'r'), ('Y_RNA', 'chr3', 'r'), ('Y_RNA', 'chr3', 'f'), ('Y_RNA', 'chr4', 'r'), ('Y_RNA', 'chr4', 'f'), ('Y_RNA', 'chr5', 'r'), ('Y_RNA', 'chr5', 'f'), ('Y_RNA', 'chr6', 'r'), ('Y_RNA', 'chr6', 'f'), ('Y_RNA', 'chr7', 'r'), ('Y_RNA', 'chr7', 'f'), ('Y_RNA', 'chr8', 'f'), ('Y_RNA', 'chr8', 'r'), ('Y_RNA', 'chr9', 'f'), ('Y_RNA', 'chr9', 'r'), ('Y_RNA', 'chrX', 'r'), ('Y_RNA', 'chrX', 'f'), ('Y_RNA', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('WASIR1', 'chrX', 'r'), ('WASIR1', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U8', 'chr1', 'f'), ('U8', 'chr10', 'r'), ('U8', 'chr10', 'f'), ('U8', 'chr11', 'f'), ('U8', 'chr12', 'r'), ('U8', 'chr12', 'f'), ('U8', 'chr15', 'f'), ('U8', 'chr15', 'r'), ('U8', 'chr18', 'r'), ('U8', 'chr2', 'r'), ('U8', 'chr2', 'f'), ('U8', 'chr3', 'r'), ('U8', 'chr3', 'f'), ('U8', 'chr5', 'r'), ('U8', 'chr5', 'f'), ('U8', 'chr6', 'r'), ('U8', 'chr8', 'r'), ('U8', 'chr9', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U4', 'chr1', 'r'), ('U4', 'chr1', 'f'), ('U4', 'chr11', 'r'), ('U4', 'chr2', 'f'), ('U4', 'chr5', 'r'), ('U4', 'chr6', 'f'), ('U4', 'chr8', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U7', 'chr1', 'f'), ('U7', 'chr12', 'r'), ('U7', 'chr15', 'f'), ('U7', 'chr16', 'r'), ('U7', 'chr22', 'r'), ('U7', 'chr3', 'f'), ('U7', 'chrX', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U6', 'chr1', 'r'), ('U6', 'chr1', 'f'), ('U6', 'chr10', 'f'), ('U6', 'chr11', 'r'), ('U6', 'chr11', 'f'), ('U6', 'chr12', 'f'), ('U6', 'chr12', 'r'), ('U6', 'chr13', 'f'), ('U6', 'chr14', 'r'), ('U6', 'chr15', 'r'), ('U6', 'chr15', 'f'), ('U6', 'chr16', 'f'), ('U6', 'chr17', 'r'), ('U6', 'chr2', 'f'), ('U6', 'chr2', 'r'), ('U6', 'chr20', 'r'), ('U6', 'chr21', 'f'), ('U6', 'chr22', 'f'), ('U6', 'chr3', 'f'), ('U6', 'chr4', 'f'), ('U6', 'chr4', 'r'), ('U6', 'chr9', 'f'), ('U6', 'chrX', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U1', 'chr1', 'f'), ('U1', 'chr1', 'r'), ('U1', 'chr21', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U3', 'chr1', 'f'), ('U3', 'chr1', 'r'), ('U3', 'chr10', 'f'), ('U3', 'chr10', 'r'), ('U3', 'chr11', 'f'), ('U3', 'chr14', 'r'), ('U3', 'chr15', 'f'), ('U3', 'chr15', 'r'), ('U3', 'chr17', 'r'), ('U3', 'chr17', 'f'), ('U3', 'chr18', 'f'), ('U3', 'chr18', 'r'), ('U3', 'chr19', 'r'), ('U3', 'chr2', 'f'), ('U3', 'chr2', 'r'), ('U3', 'chr20', 'f'), ('U3', 'chr20', 'r'), ('U3', 'chr21', 'r'), ('U3', 'chr3', 'r'), ('U3', 'chr3', 'f'), ('U3', 'chr4', 'f'), ('U3', 'chr5', 'f'), ('U3', 'chr5', 'r'), ('U3', 'chr6', 'f'), ('U3', 'chr6', 'r'), ('U3', 'chr7', 'f'), ('U3', 'chr7', 'r'), ('U3', 'chr8', 'f'), ('U3', 'chr8', 'r'), ('U3', 'chrX', 'f'), ('U3', 'chrX', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('U2', 'chr1', 'f'), ('U2', 'chr14', 'r'), ('U2', 'chr17', 'r'), ('U2', 'chr22', 'r'), ('U2', 'chr3', 'f'), ('U2', 'chr4', 'f'), ('U2', 'chr8', 'r'), ('U2', 'chr9', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('MIR6089', 'chrX', 'f'), ('MIR6089', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('IL3RA', 'chrX', 'f'), ('IL3RA', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('GTPBP6', 'chrX', 'r'), ('GTPBP6', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD18', 'chr15', 'r'), ('SNORD18', 'chr2', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LSP1P5', 'chr1', 'f'), ('LSP1P5', 'chr2', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ELOCP24', 'chrX', 'r'), ('ELOCP24', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('Vault', 'chr17', 'f'), ('Vault', 'chr17', 'r'), ('Vault', 'chr2', 'r'), ('Vault', 'chr5', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC03025', 'chr9', 'r'), ('LINC03025', 'chr9', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('5S_rRNA', 'chr1', 'r'), ('5S_rRNA', 'chr16', 'r'), ('5S_rRNA', 'chr17', 'r'), ('5S_rRNA', 'chr19', 'r'), ('5S_rRNA', 'chr2', 'r'), ('5S_rRNA', 'chr2', 'f'), ('5S_rRNA', 'chr6', 'r'), ('5S_rRNA', 'chr7', 'r'), ('5S_rRNA', 'chrX', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('WASH6P', 'chrX', 'f'), ('WASH6P', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC01238', 'chr2', 'f'), ('LINC01238', 'chr2', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('MIR3690', 'chrX', 'f'), ('MIR3690', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('HERC2P7', 'chr15', 'r'), ('HERC2P7', 'chr15', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('CTSLP2', 'chr10', 'f'), ('CTSLP2', 'chr10', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA62', 'chr1', 'f'), ('SNORA62', 'chr11', 'f'), ('SNORA62', 'chr16', 'r'), ('SNORA62', 'chr21', 'f'), ('SNORA62', 'chr3', 'f'), ('SNORA62', 'chr4', 'f'), ('SNORA62', 'chr8', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA63', 'chr1', 'f'), ('SNORA63', 'chr1', 'r'), ('SNORA63', 'chr15', 'r'), ('SNORA63', 'chr3', 'f'), ('SNORA63', 'chr4', 'f'), ('SNORA63', 'chr5', 'f'), ('SNORA63', 'chr7', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD116', 'chr1', 'r'), ('SNORD116', 'chr13', 'r'), ('SNORD116', 'chr9', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD63', 'chr17', 'r'), ('SNORD63', 'chr3', 'r'), ('SNORD63', 'chr5', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('KMT2CP1', 'chr1', 'r'), ('KMT2CP1', 'chr1', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SHOX', 'chrX', 'f'), ('SHOX', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('RPL23AP7', 'chr2', 'r'), ('RPL23AP7', 'chr22', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('DHRSX-IT1', 'chrX', 'r'), ('DHRSX-IT1', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD39', 'chr11', 'r'), ('SNORD39', 'chr2', 'f'), ('SNORD39', 'chr4', 'r'), ('SNORD39', 'chr9', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ZBED1', 'chrX', 'r'), ('ZBED1', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ASMTL-AS1', 'chrX', 'f'), ('ASMTL-AS1', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD30', 'chr11', 'r'), ('SNORD30', 'chrX', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ASMTL', 'chrX', 'r'), ('ASMTL', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('FABP5P13', 'chrX', 'r'), ('FABP5P13', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('CD99', 'chrX', 'f'), ('CD99', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('DHRSX', 'chrX', 'r'), ('DHRSX', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD33', 'chr16', 'r'), ('SNORD33', 'chr19', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('NPIPA9', 'chr16', 'f'), ('NPIPA9', 'chr16', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD81', 'chr1', 'f'), ('SNORD81', 'chr5', 'f'), ('SNORD81', 'chr7', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('PLCXD1', 'chrX', 'f'), ('PLCXD1', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('RNA5SP498', 'chrX', 'r'), ('RNA5SP498', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('Metazoa_SRP', 'chr1', 'f'), ('Metazoa_SRP', 'chr1', 'r'), ('Metazoa_SRP', 'chr10', 'f'), ('Metazoa_SRP', 'chr10', 'r'), ('Metazoa_SRP', 'chr11', 'r'), ('Metazoa_SRP', 'chr11', 'f'), ('Metazoa_SRP', 'chr12', 'f'), ('Metazoa_SRP', 'chr12', 'r'), ('Metazoa_SRP', 'chr13', 'r'), ('Metazoa_SRP', 'chr13', 'f'), ('Metazoa_SRP', 'chr14', 'r'), ('Metazoa_SRP', 'chr14', 'f'), ('Metazoa_SRP', 'chr15', 'r'), ('Metazoa_SRP', 'chr15', 'f'), ('Metazoa_SRP', 'chr16', 'f'), ('Metazoa_SRP', 'chr16', 'r'), ('Metazoa_SRP', 'chr17', 'r'), ('Metazoa_SRP', 'chr17', 'f'), ('Metazoa_SRP', 'chr18', 'r'), ('Metazoa_SRP', 'chr19', 'f'), ('Metazoa_SRP', 'chr19', 'r'), ('Metazoa_SRP', 'chr2', 'f'), ('Metazoa_SRP', 'chr2', 'r'), ('Metazoa_SRP', 'chr20', 'f'), ('Metazoa_SRP', 'chr20', 'r'), ('Metazoa_SRP', 'chr22', 'f'), ('Metazoa_SRP', 'chr22', 'r'), ('Metazoa_SRP', 'chr3', 'r'), ('Metazoa_SRP', 'chr3', 'f'), ('Metazoa_SRP', 'chr4', 'r'), ('Metazoa_SRP', 'chr4', 'f'), ('Metazoa_SRP', 'chr5', 'f'), ('Metazoa_SRP', 'chr5', 'r'), ('Metazoa_SRP', 'chr6', 'f'), ('Metazoa_SRP', 'chr6', 'r'), ('Metazoa_SRP', 'chr7', 'f'), ('Metazoa_SRP', 'chr7', 'r'), ('Metazoa_SRP', 'chr8', 'f'), ('Metazoa_SRP', 'chr8', 'r'), ('Metazoa_SRP', 'chr9', 'f'), ('Metazoa_SRP', 'chr9', 'r'), ('Metazoa_SRP', 'chrX', 'r'), ('Metazoa_SRP', 'chrX', 'f'), ('Metazoa_SRP', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('CSF2RA', 'chrX', 'f'), ('CSF2RA', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('PPP2R3B', 'chrX', 'r'), ('PPP2R3B', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('DPH3P2', 'chrX', 'f'), ('DPH3P2', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ASMT', 'chrX', 'f'), ('ASMT', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('IL9R', 'chrX', 'f'), ('IL9R', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('VAMP7', 'chrX', 'f'), ('VAMP7', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC02968', 'chrX', 'f'), ('LINC02968', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA75', 'chr12', 'r'), ('SNORA75', 'chr12', 'f'), ('SNORA75', 'chr16', 'f'), ('SNORA75', 'chr2', 'r'), ('SNORA75', 'chr4', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA74', 'chr12', 'r'), ('SNORA74', 'chr17', 'f'), ('SNORA74', 'chr2', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA73', 'chr18', 'f'), ('SNORA73', 'chr18', 'r'), ('SNORA73', 'chr6', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA72', 'chr1', 'r'), ('SNORA72', 'chr1', 'f'), ('SNORA72', 'chr2', 'f'), ('SNORA72', 'chr3', 'f'), ('SNORA72', 'chr3', 'r'), ('SNORA72', 'chr8', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA71', 'chr10', 'f'), ('SNORA71', 'chr20', 'r'), ('SNORA71', 'chr20', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORA70', 'chr1', 'r'), ('SNORA70', 'chr12', 'r'), ('SNORA70', 'chr12', 'f'), ('SNORA70', 'chr14', 'f'), ('SNORA70', 'chr16', 'r'), ('SNORA70', 'chr17', 'r'), ('SNORA70', 'chr17', 'f'), ('SNORA70', 'chr18', 'r'), ('SNORA70', 'chr19', 'f'), ('SNORA70', 'chr21', 'f'), ('SNORA70', 'chr21', 'r'), ('SNORA70', 'chr3', 'f'), ('SNORA70', 'chr4', 'f'), ('SNORA70', 'chr5', 'f'), ('SNORA70', 'chr6', 'f'), ('SNORA70', 'chr8', 'r'), ('SNORA70', 'chr8', 'f'), ('SNORA70', 'chr9', 'f'), ('SNORA70', 'chr9', 'r'), ('SNORA70', 'chrX', 'f'), ('SNORA70', 'chrY', 'r'), ('SNORA70', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('AMD1P2', 'chrX', 'r'), ('AMD1P2', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('CRLF2', 'chrX', 'r'), ('CRLF2', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD115', 'chr10', 'f'), ('SNORD115', 'chr15', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('AKAP17A', 'chrX', 'f'), ('AKAP17A', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SNORD27', 'chr11', 'r'), ('SNORD27', 'chr13', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('P2RY8', 'chrX', 'r'), ('P2RY8', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('NPEPPSP1', 'chr17', 'f'), ('NPEPPSP1', 'chr17', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC00685', 'chrX', 'f'), ('LINC00685', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('DDX11L2', 'chr1', 'f'), ('DDX11L2', 'chr2', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('GABARAPL3', 'chr15', 'f'), ('GABARAPL3', 'chr15', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC02256', 'chr15', 'r'), ('LINC02256', 'chr15', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('5_8S_rRNA', 'chr14', 'f'), ('5_8S_rRNA', 'chr20', 'r'), ('5_8S_rRNA', 'chr21', 'f'), ('5_8S_rRNA', 'chr22', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('RPL14P5', 'chrX', 'r'), ('RPL14P5', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('LINC00106', 'chrX', 'f'), ('LINC00106', 'chrY', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('ANKRD20A5P', 'chr18', 'f'), ('ANKRD20A5P', 'chr9', 'f')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('SLC25A6', 'chrX', 'r'), ('SLC25A6', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('KRT18P53', 'chrX', 'r'), ('KRT18P53', 'chrY', 'r')]
+Warning: Input gene annotations include multiple chr, strand, or regions (5Mb away). Skipping current gene annotation.
+[('DDX11L16', 'chr15', 'r'), ('DDX11L16', 'chr16', 'f'), ('DDX11L16', 'chrX', 'r'), ('DDX11L16', 'chrY', 'r')]
+Gene intervals loaded.
+23.5426120758 sec. elapsed.
+Transcript annotations loaded.
+15.8768470287 sec. elapsed.
+Merge cff by exons
+Loading required package: graph
+Loading required package: BiocGenerics
+
+Attaching package: 'BiocGenerics'
+
+The following objects are masked from 'package:stats':
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from 'package:base':
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Reading FID.intersections.tsv file
+3520 records to build graph
+Building graph
+output cis-sage.cluster file
+ReadThrough, callerfilter 1
+python callerfilter_num.py --cluster /MetaFusion/RUNS_Results/TARGET-AML_Cell_Lines/Cell_Lines.cff.reformat.renamed.reann.WITH_SEQ.exons.cluster --num_tools 1 | grep -v ReadThrough > /MetaFusion/RUNS_Results/TARGET-AML_Cell_Lines/Cell_Lines.cff.reformat.renamed.reann.WITH_SEQ.exons.cluster.RT_filter.callerfilter.1
+blocklist filter
+ANC adjacent noncoding filter
+Rank and generate final.cluster
+Running FusionAnnotator
+-parsing annotation gene spans
+-warning, no gene stored for identifier: [SPATA31F3]
+-warning, no gene stored for identifier: [ENTREP2]
+-warning, no gene stored for identifier: [LOC100506403]
+-warning, no gene stored for identifier: [AC005753.2]
+-warning, no gene stored for identifier: [AC018630.4]
+-warning, no gene stored for identifier: [AC027128.1]
+-warning, no gene stored for identifier: [BLTP2]
+-warning, no gene stored for identifier: [AC105180.2]
+-warning, no gene stored for identifier: [AC108169.1]
+-warning, no gene stored for identifier: [LOC102723728]
+-warning, no gene stored for identifier: [AKAP1-DT]
+-warning, no gene stored for identifier: [AL078604.4]
+-warning, no gene stored for identifier: [AL109933.5]
+-warning, no gene stored for identifier: [AL391832.4]
+-warning, no gene stored for identifier: [AL590807.1]
+-warning, no gene stored for identifier: [AL645933.3]
+-warning, no gene stored for identifier: [ENTREP3]
+-warning, no gene stored for identifier: [NEPRO-AS1]
+-warning, no gene stored for identifier: [CASTOR3P]
+-warning, no gene stored for identifier: [CCDC144BP]
+-warning, no gene stored for identifier: [CIMIP2C]
+-warning, no gene stored for identifier: [COX10-DT]
+-warning, no gene stored for identifier: [DNAAF9]
+-warning, no gene stored for identifier: [AL359764.3]
+-warning, no gene stored for identifier: [LINC02815]
+-warning, no gene stored for identifier: [EPS15-AS1]
+-warning, no gene stored for identifier: [LINC02808]
+-warning, no gene stored for identifier: [LOC124900358]
+-warning, no gene stored for identifier: [H2BC4]
+-warning, no gene stored for identifier: [H2BC6]
+-warning, no gene stored for identifier: [H2BC7]
+-warning, no gene stored for identifier: [H2BC10]
+-warning, no gene stored for identifier: [HSDL2-AS1]
+-warning, no gene stored for identifier: [HYCC1]
+-warning, no gene stored for identifier: [AC026736.1]
+-warning, no gene stored for identifier: [IGBP1C]
+-warning, no gene stored for identifier: [VCF1]
+-warning, no gene stored for identifier: [LINC02882]
+-warning, no gene stored for identifier: [CBR1-AS1]
+-warning, no gene stored for identifier: [LOC101928438]
+-warning, no gene stored for identifier: [STX17-DT]
+-warning, no gene stored for identifier: [LOC101929536]
+-warning, no gene stored for identifier: [LOC105369147]
+-warning, no gene stored for identifier: [LOC105371855]
+-warning, no gene stored for identifier: [LOC124901107]
+-warning, no gene stored for identifier: [LOC124902568]
+-warning, no gene stored for identifier: [LOC401312]
+-warning, no gene stored for identifier: [AC069288.1]
+-warning, no gene stored for identifier: [MICOS10-DT]
+-warning, no gene stored for identifier: [PKD1P3]
+-warning, no gene stored for identifier: [PRH1-TAS2R14]
+-warning, no gene stored for identifier: [ABCF2-H2BK1]
+-warning, no gene stored for identifier: [SCIRT]
+-warning, no gene stored for identifier: [PKD1P4]
+-warning, no gene stored for identifier: [TAFAZZIN]
+-warning, no gene stored for identifier: [ZNF664-RFLNA]
+-warning, no gene stored for identifier: [TOP6BL]
+-warning, no gene stored for identifier: [TRD-AS1]
+-warning, no gene stored for identifier: [SLX9]
+-warning, no gene stored for identifier: [YJU2B]
+Adding FusionAnnotator database hits to final.cluster.CANCER_FUSIONS file
+no benchmarking performed
+Done
+End at Sat Oct 5 07:36:51 UTC 2024 -----------
